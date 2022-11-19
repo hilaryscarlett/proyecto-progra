@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 
 st.title("Proyecto Programación 2022-2")
-st.write()
+st.write("hola cons")
 st.line_chart()
 
 st.title()
