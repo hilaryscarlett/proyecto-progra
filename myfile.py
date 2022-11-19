@@ -3,11 +3,11 @@ import pandas as pd
 import numpy as np
 from datetime import time
 import datetime
-
+from PIL import Image
 
 st.header("Adaptadod de Ministerio de Salud")
 st.title("Fallecidos por COVID-19")
-from PIL import Image
+
 image=Image.open('imag-refe.jpg')
 
 st.image(image,caption='Sunrise by the mountains')
