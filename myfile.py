@@ -4,6 +4,9 @@ import numpy as np
 from datetime import time
 import datetime
 
+!wget https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv
+
+pd.read_csv("fallecidos_covid.csv")
 
 
 st.title("Fallecidos por COVID-19")
@@ -11,13 +14,15 @@ st.title("Fallecidos por COVID-19")
 st.caption("En esta página web se realiza el registro diaria de muertes por Covid-19")
 text=st
 
+st.bar_chart(data='https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv, *, x=12, y=500', 
+             ancho=0, 
+             alto=0, 
+             use_container_width=Verdadero)
 
 
-chart_data = pd.DataFrame(
-    np.random.randn(20, 3),
-    columns=["a", "b", "c"])
 
-st.bar_chart(chart_data)
+
+
 
 
 
