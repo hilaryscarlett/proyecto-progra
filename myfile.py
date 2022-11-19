@@ -9,16 +9,16 @@ import datetime
 
 st.title("Fallecidos por COVID-19")
 
-st.caption("En esta página web se realiza el registro diaria de muertes por Covid-19")
+st.caption("En esta página web se realizó el registro diario de muertes por Covid-19 y se mostrarán gráficas e imágenes")
 text=st
 
-st.bar_chart(data='https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv',
-             x=12,
-             y=500, 
-             ancho=50, 
-             alto=50, 
-             use_container_width=Verdadero)
 
+
+chart_data = pd.DataFrame(
+    np.random.randn(2, 3),
+    columns=["a"])
+
+st.bar_chart(chart_data)
 
 
 
