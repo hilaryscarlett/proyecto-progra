@@ -14,12 +14,6 @@ text=st
 
 
 
-chart_data = pd.DataFrame(
-    np.random.randn(2, 3),
-    columns=["a"])
-
-st.bar_chart(chart_data)
-
 
 
 
