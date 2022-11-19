@@ -5,8 +5,9 @@ from datetime import time
 import datetime
 
 
-st.title("Proyecto Programación 2022-2")
-st.title("                Fallecidos por covid              ")
+st.header("Adaptadod de Ministerio de Salud")
+st.title("Fallecidos por COVID-19")
+st.subheader("En esta pagina web se realiza el registro diaria de muertes por Covid-19")
 d= st.date_input("fallecidos",datetime.date(2019, 7, 6))
 st.write("ingresar fecha de fallecimiento:", d)
 option = st.selectbox('¿Cómo desearía ser contactado/a?',('Email', 'Teléfono', 'Whatsapp'))
