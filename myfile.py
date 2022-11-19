@@ -12,6 +12,6 @@ st.write("ingresar fecha de fallecimiento:", d)
 option = st.selectbox('¿Cómo desearía ser contactado/a?',('Email', 'Teléfono', 'Whatsapp'))
 st.write('Seleccionó:', option)
 
-tittle=st.text_input('Ingrese su número de Teléfono')
+tittle=st.text_input('Ingrese la opción que eligió')
 
 
