@@ -17,7 +17,7 @@ st.write(tittle)
 d= st.date_input("Fecha de fallecimiento",datetime.date(2019, 7, 6))
 st.write("ingresar fecha de fallecimiento:", d)
 
-choice = st.selectbox("Sexo", ["Femenino","Masculino"]
+choice = st.selectbox("Sexo", ["Femenino","Masculino"])
 
 
 option = st.selectbox('¿Cómo desearía ser contactado/a?',('Email', 'Teléfono','Whatsapp'))
