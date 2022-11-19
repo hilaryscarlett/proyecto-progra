@@ -12,7 +12,9 @@ st.title("Fallecidos por COVID-19")
 st.caption("En esta página web se realiza el registro diaria de muertes por Covid-19")
 text=st
 
-st.bar_chart(data='https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv, *, x=12, y=500', 
+st.bar_chart(data='https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv',
+             x=12,
+             y=500, 
              ancho=0, 
              alto=0, 
              use_container_width=Verdadero)
