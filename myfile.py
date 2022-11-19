@@ -15,8 +15,8 @@ text=st
 st.bar_chart(data='https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv',
              x=12,
              y=500, 
-             ancho=0, 
-             alto=0, 
+             ancho=50, 
+             alto=50, 
              use_container_width=Verdadero)
 
 
