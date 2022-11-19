@@ -11,6 +11,17 @@ st.title("Fallecidos por COVID-19")
 st.caption("En esta página web se realiza el registro diaria de muertes por Covid-19")
 text=st
 
+
+
+chart_data = pd.DataFrame(
+    np.random.randn(20, 3),
+    columns=["a", "b", "c"])
+
+st.bar_chart(chart_data)
+
+
+
+
 tittle=st.text_input('Nombre y Apellidos:')
 st.write(tittle)
 
