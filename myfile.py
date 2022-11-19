@@ -4,9 +4,7 @@ import numpy as np
 from datetime import time
 import datetime
 
-!wget https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv
 
-pd.read_csv("fallecidos_covid.csv")
 
 
 st.title("Fallecidos por COVID-19")
