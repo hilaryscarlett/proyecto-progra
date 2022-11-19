@@ -9,9 +9,4 @@ st.line_chart()
 st.title()
 st.write()
 st.line_chart()
-
-st.title()
-x=pd.DataFrame(
-  np.random.randn(1000,2)/[50,50]+[]
-  columns=[])
-st.map(x)
+print("hola")
