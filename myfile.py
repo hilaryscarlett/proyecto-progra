@@ -7,7 +7,12 @@ import datetime
 
 st.header("Adaptadod de Ministerio de Salud")
 st.title("Fallecidos por COVID-19")
+from PIL import Image
+image=Image.open('imag-refe')
+
+st.image(image,caption='Sunrise by the mountains')
 st.subheader("En esta pagina web se realiza el registro diaria de muertes por Covid-19")
+text=st
 d= st.date_input("fallecidos",datetime.date(2019, 7, 6))
 st.write("ingresar fecha de fallecimiento:", d)
 option = st.selectbox('¿Cómo desearía ser contactado/a?',('Email', 'Teléfono', 'Whatsapp'))
