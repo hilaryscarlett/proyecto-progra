@@ -6,9 +6,9 @@ import datetime
 
 
 
-st.title("    Fallecidos por COVID-19    ")
+st.title("Fallecidos por COVID-19")
 
-st.caption("En esta pagina web se realiza el registro diaria de muertes por Covid-19")
+st.caption("En esta página web se realiza el registro diaria de muertes por Covid-19")
 text=st
 d= st.date_input("fallecidos",datetime.date(2019, 7, 6))
 st.write("ingresar fecha de fallecimiento:", d)
