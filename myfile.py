@@ -6,7 +6,7 @@ import datetime
 
 
 
-st.title("Fallecidos por COVID-19")
+st.title("    Fallecidos por COVID-19    ")
 
 st.caption("En esta pagina web se realiza el registro diaria de muertes por Covid-19")
 text=st
