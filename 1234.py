@@ -6,7 +6,7 @@ import numpy as np
 st.header("FALLECIDOS COVID")
 
 def download_data():
-  url='https://files.minsa.gob.pe/s/t9AFqRbXw3F55Ho/download'
+  url='https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv'
   filename="fallecidos_covid"
   urllib.request.urlretrieve(url,filename)
   df=pd.read_csv("fallecidos_covid")
