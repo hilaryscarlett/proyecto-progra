@@ -12,3 +12,10 @@ Original file is located at
 import pandas as pd
 
 pd.read_csv("fallecidos_covid.csv")
+
+
+
+
+
+
+
