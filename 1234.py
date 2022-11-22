@@ -1,3 +1,6 @@
+#$ pip install streamlit --upgrade
+
+
 import streamlit as st
 import urllib.request
 import pandas as pd
