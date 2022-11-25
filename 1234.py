@@ -3,7 +3,6 @@ import streamlit as st
 import urllib.request
 import pandas as pd
 import numpy as np
-from matplotlib import pyplot as plt
 
 st.header("FALLECIDOS COVID")
 
