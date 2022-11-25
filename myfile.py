@@ -25,8 +25,8 @@ st.dataframe(c)
 st.subheader("caracteristicas del dataset")
 st.write(c.describe())
 
-
-
+d=download_data()
+st.bar_chart(data=d, *, x=str(d.shape[0]), y=str(c.shape[1]))
 
 
 tittle=st.text_input('Nombre y Apellidos:')
