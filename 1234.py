@@ -22,3 +22,4 @@ url= "https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fall
 datos=pd.read_csv(url,sep=",")
 st.line_chart(data=datos,x="FECHA_UTC",y="MAGNITUD")
 
+
