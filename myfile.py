@@ -7,6 +7,7 @@ import datetime
 import urllib.request
 
 import altair as alt
+st.sidebar.write("Fallecidos por covid")
 
 st.title("Fallecidos por COVID-19")
 
