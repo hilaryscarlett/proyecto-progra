@@ -6,6 +6,8 @@ from datetime import time
 import datetime
 import urllib.request
 
+import altair as alt
+
 st.title("Fallecidos por COVID-19")
 
 st.caption("En esta página web se realizó el registro diario de muertes por Covid-19 y se mostrarán gráficas e imágenes")
@@ -26,7 +28,19 @@ st.subheader("caracteristicas del dataset")
 st.write(c.describe())
 
 d=download_data()
-st.bar_chart(data=d, *, x=str(d.shape[0]), y=str(c.shape[1]))
+
+chart = (
+    alt.Chart(d)
+    .mark_bar()
+    .encode(
+        alt.X("Nucleotide:O"),
+        alt.Y("Similarities"),
+        alt.Color("Nucleotide:O"),
+        alt.Tooltip(["Nucleotide", "Similarities"]),
+    )
+    .interactive()
+)
+st.altair_chart(chart)
 
 
 tittle=st.text_input('Nombre y Apellidos:')
