@@ -4,9 +4,6 @@ import pandas as pd
 import numpy as np
 from datetime import time
 import datetime
-
-
-
 import urllib.request
 
 st.title("Fallecidos por COVID-19")
