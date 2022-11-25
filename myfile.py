@@ -28,14 +28,8 @@ st.dataframe(c)
 st.subheader("caracteristicas del dataset")
 st.write(c.describe())
 
-d=download_data()
 
-@st.cache
-def get_data(filename):
-  df = pd.read_csv("fallecidos_covid")
-  return df
-
-chart_data = pd.df(
+chart_data = pd.dataframe(
     np.random.randn(20, 3),
     columns=["a", "b", "c"])
 
