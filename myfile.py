@@ -31,7 +31,7 @@ st.write(c.describe())
 
 chart_data = pd.DataFrame(
     np.random.randn(20, 3),
-    columns=["a", "b", "c"])
+    columns=["a"])
 
 st.bar_chart(chart_data)
 
