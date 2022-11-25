@@ -30,18 +30,16 @@ st.write(c.describe())
 
 d=download_data()
 
-chart = (
-    alt.Chart(d)
-    .mark_bar()
-    .encode(
-        alt.X("Nucleotide:O"),
-        alt.Y("Similarities"),
-        alt.Color("Nucleotide:O"),
-        alt.Tooltip(["Nucleotide", "Similarities"]),
-    )
-    .interactive()
-)
-st.altair_chart(chart)
+@st.cache
+def get_data(filename):
+  df = pd.read_csv("fallecidos_covid")
+  return df
+
+chart_data = pd.df(
+    np.random.randn(20, 3),
+    columns=["a", "b", "c"])
+
+st.bar_chart(chart_data)
 
 
 tittle=st.text_input('Nombre y Apellidos:')
