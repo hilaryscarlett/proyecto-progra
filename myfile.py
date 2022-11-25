@@ -41,6 +41,10 @@ choice = st.selectbox("Sexo", ["Femenino","Masculino"])
 option = st.selectbox('¿Cómo desearía ser contactado/a?',('Email', 'Teléfono','Whatsapp'))
 st.write('Seleccionó:', option)
 
+st.sidebar.write("esto esta en el sidebar")
+if st.sidebar.button("mi boton opcional")
+    st.ballons()
+
 tittle=st.text_input('Ingrese la opción que eligió')
 st.write("Número de teléfono o email de contecto:", tittle)
 
