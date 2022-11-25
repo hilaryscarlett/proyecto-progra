@@ -9,8 +9,11 @@ import datetime
 
 import urllib.request
 
+st.title("Fallecidos por COVID-19")
 
-st.header("FALLECIDOS COVID")
+st.caption("En esta página web se realizó el registro diario de muertes por Covid-19 y se mostrarán gráficas e imágenes")
+text=st
+
 
 def download_data():
   url='https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv'
@@ -28,20 +31,6 @@ st.write(c.describe())
 url= "https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv"
 datos=pd.read_csv(url,sep=",")
 st.line_chart(data=datos,x="FECHA_UTC",y="MAGNITUD")
-
-
-
-
-st.title("Fallecidos por COVID-19")
-
-st.caption("En esta página web se realizó el registro diario de muertes por Covid-19 y se mostrarán gráficas e imágenes")
-text=st
-
-
-
-
-
-
 
 
 
