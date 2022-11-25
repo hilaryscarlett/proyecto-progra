@@ -29,7 +29,7 @@ st.subheader("caracteristicas del dataset")
 st.write(c.describe())
 
 
-chart_data = pd.DataFrame(
+chart_data = pd.df(
     np.random.randn(20, 1),
     columns=["a"])
 
