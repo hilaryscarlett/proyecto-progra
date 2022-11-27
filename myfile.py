@@ -6,6 +6,7 @@ import datetime
 import urllib.request
 from PIL import Image
 from streamlit_option_menu import option_menu
+import matplotlib.pyplot as plt
 
 st.set_page_config(
     page_title="FALLECIDOS COVID",
@@ -74,22 +75,12 @@ if selected == 'DATOS':
     
 if selected == 'INFORMACIÓN ESTADÍSTICA':    
     st.markdown("<h1 style='text-align: center; color: black;'>Ministerio de Salud</h1>", unsafe_allow_html=True)
-    <?php
-  function pie() {
-        $this->load->library('phpgraphlib');
-	$this->load->library('phpgraphlibpie');
-	$graph = new PHPGraphLibPie(330, 240);
-        var $data = array(); //Lo llenan con json, xml, mysql, etc
-	$graph->addData($data);
-        //El name lo obtienen de alguna consulta
-	$graph->setTitle('Menciones por #Hashtag : '.utf8_decode($name).'');
-	$graph->setTextColor("blue");	
-	$graph->setLabelTextColor('50,50,50');
-	$graph->setLegendTextColor('50,50,50');
-	$graph->createGraph();
-   }
-
-   >
+    porcentaje = [63.2738618426805,36.726138157319504]
+    sexo = ["M","F"]
+    colores = ["#60D394","#FFD97D"]
+    plt.pie(porcentaje, labels=sexo, autopct="%0.1f %%", colors=colores)
+    plt.axis("equal")
+    plt.show()
    
     
 if selected == 'Reportes':
