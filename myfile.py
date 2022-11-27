@@ -15,10 +15,10 @@ st.set_page_config(
 st.sidebar.image('Logo_Oficial.png')        
 st.sidebar.write("Programación Avanzada",
                 "Proyecto 2022-2")
-st.sidebar.write("INTEGRANTES",
-                "- Gutierrez, Consuelo",
-                "- Malca, Melanie",
-                "- Ramirez, Hilary")
+st.sidebar.write("INTEGRANTES"{)
+st.sidebar.write("- Gutierrez, Consuelo")
+st.sidebar.write("- Malca, Melanie")
+st.sidebar.write("- Ramirez, Hilary")
 st.sidebar.success('Recopilación de datos sobre la defuncion por Covid-19 del Ministerio de Salud')
 st.sidebar.write("Datos")
 
