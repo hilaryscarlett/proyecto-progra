@@ -7,6 +7,10 @@ import datetime
 import urllib.request
 from PIL import Image
 
+st.set_page_config(
+    page_title="FALLECIDOS COVID",
+    page_icon="😷",
+)
 
 st.sidebar.image('Logo_Oficial.png')        
 st.sidebar.write("👨‍⚕️ ","DATOS DE LOS FALLECIDOS")
