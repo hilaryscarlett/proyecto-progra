@@ -38,7 +38,7 @@ if selected == 'Inicio':
     
     
 if selected == 'Datos':
-    st.markdown("<p style='text-align: center; color: grey;'>"+img_to_html('ministerio.png')+"</p>", unsafe_allow_html=True)
+    
    
     st.image('ministerio.png')
     st.markdown("<h1 style='text-align: center; color: black;'>Fallecidos por Covid-19</h1>", unsafe_allow_html=True)
@@ -61,6 +61,18 @@ if selected == 'Datos':
     st.subheader("Características del Dataset")
     st.write(c.describe())
     
+    df=pd.read_csv=("https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv")
+    fig=go.Figure(data=[go.Table(
+        header=dict(values=list(df.columns),
+                    fill_color='paleturquoise',
+                    align='left'),
+        cells=dict(values=[df='FECHA_FALLECIMIENTO',df='SEXO',df='DEPARTAMENTO'],
+                   fill_color='lavender',
+                   align='left'))
+     ])
+     fig.update_layput(height=1200,width=600,margin=dict(r=5,l=5,t=5,b=5))
+     fig.show()
+    
    
 
 
@@ -76,13 +88,14 @@ if selected == 'Equipo':
 
 #--------------------------------------------------------------------------------------------
 
-chart_data = pd.DataFrame(
-    np.random.randn(20, 2),
-    columns=["DISTRITO","PROVINCIA"])
 
-st.bar_chart(chart_data)
+#chart_data = pd.DataFrame(
+    #np.random.randn(20, 1),
+    #columns=["a"])
 
-#---------------------------------------------------------------------------------------------
+#st.bar_chart(chart_data)
+
+
 
 
 #tittle=st.text_input('Nombre y Apellidos:')
