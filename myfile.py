@@ -27,21 +27,41 @@ st.sidebar.success('Recopilación de datos sobre la defuncion por Covid-19 del M
 with st.sidebar:
     selected = option_menu(
         menu_title='Menu',
-        options = ['Inicio','Localización','Reportes','Equipo'],
+        options = ['Inicio','Datos','Reportes','Equipo'],
         icons = ['house','map','book','people'],
         menu_icon='cast',
         default_index = 0,
     )
     
-#if selected == 'Inicio':
+if selected == 'Inicio':
+    st.markdown("<h1 style='text-align: center; color: black;'>Situación actual covid-19</h1>", unsafe_allow_html=True)
     
     
-if selected == 'Localización':
+if selected == 'Datos':
     st.image('ministerio.png')
     st.markdown("<h1 style='text-align: center; color: black;'>Fallecidos por Covid-19</h1>", unsafe_allow_html=True)
     st.subheader("Datos proporcionados por el Ministerio de Salud (MINSA)")
     st.caption("En esta página web se realizó el registro diario de muertes por Covid-19 y se mostrarán gráficas e imágenes")
     text=st
+    
+    def download_data():
+        url='https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv'
+        filename="fallecidos_covid"
+        urllib.request.urlretrieve(url,filename)
+        df=pd.read_csv("fallecidos_covid")
+        return df
+    
+    st.subheader("Datos generales proporcionados por el Ministerio de Salud sobre el número de fallecidos")
+    c=download_data()
+    #st.write("dimensiones: "+str(c.shape[0])+"filas"+str(c.shape[1])+"columnas")
+    st.dataframe(c)
+    # CUADRO DE CARACTERÍSTICAS DEL DATASET
+    st.subheader("Características del Dataset")
+    st.write(c.describe())
+    
+   
+
+
    
     
 if selected == 'Reportes':
@@ -53,23 +73,6 @@ if selected == 'Equipo':
     
 
 #--------------------------------------------------------------------------------------------
-
-def download_data():
-  url='https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv'
-  filename="fallecidos_covid"
-  urllib.request.urlretrieve(url,filename)
-  df=pd.read_csv("fallecidos_covid")
-  return df
- 
-#  
-st.subheader("Datos generales proporcionados por el Ministerio de Salud sobre el número de fallecidos")
-c=download_data()
-#st.write("dimensiones: "+str(c.shape[0])+"filas"+str(c.shape[1])+"columnas")
-st.dataframe(c)
-
-# CUADRO DE CARACTERÍSTICAS DEL DATASET
-st.subheader("Características del Dataset")
-st.write(c.describe())
 
 
 chart_data = pd.DataFrame(
