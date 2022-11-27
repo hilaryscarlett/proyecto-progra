@@ -13,15 +13,19 @@ st.set_page_config(
     page_icon="🟡",
 )
 
+#------------------------------------------------------------------
+
 with st.sidebar:
     selected = option_menu(
         menu_title = 'Menu', 
         options = ['Inicio', 'Reportes', 'Equipo'],
         icons = ['house', 'book', 'people'],
-        menu_icon='cast',
+        menu_icon='dog',
         default_index = 0,
     )
+#------------------------------------------------------------------
 
+    
 st.sidebar.image('ministerio.png')        
 st.sidebar.write("✝️","DATOS DE LOS FALLECIDOS")
 st.sidebar.write("Datos")
