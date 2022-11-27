@@ -7,8 +7,9 @@ import datetime
 import urllib.request
 from PIL import Image
 
-[theme]
-base="dark"
+col1, col2 = st.columns(2)
+with col2:
+    my_component(greeting="hello")
 
 
 
