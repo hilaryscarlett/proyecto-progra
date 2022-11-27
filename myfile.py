@@ -77,7 +77,7 @@ if selected == 'Equipo':
 #--------------------------------------------------------------------------------------------
 
 chart_data = pd.DataFrame(
-    np.random.randn(20, 1),
+    np.random.randn(20, 2),
     columns=["DISTRITO","PROVINCIA"])
 
 st.bar_chart(chart_data)
