@@ -15,7 +15,7 @@ st.set_page_config(
 st.sidebar.image('Logo_Oficial.png')        
 st.sidebar.write("Programación Avanzada",
                 "Proyecto 2022-2")
-st.success('This is a success message!', icon="✅")
+st.sidebar.success('This is a success message!', icon="✅")
 st.sidebar.write("Datos")
 
 with st.sidebar:
