@@ -12,11 +12,12 @@ st.set_page_config(
     page_icon="🔴",
 )
 
-st.markdown("<h1 style='text-align: center; color: red;'>Some title</h1>", unsafe_allow_html=True)
+
 
 #---------------------------------------------------------------------------------------
-st.sidebar.image('Logo_Oficial.png')        
-st.sidebar.markdown("Programación Avanzada")
+st.sidebar.image('Logo_Oficial.png')
+st.sidebar.markdown("<h1 style='text-align: center; color: red;'>Programación Avanzada / Proyecto 2022-2</h1>", unsafe_allow_html=True)
+
 
 st.sidebar.info("INTEGRANTES: Consuelo, Melanie y Hilary")
                 
@@ -33,6 +34,7 @@ with st.sidebar:
     )
     
 #if selected == 'Inicio':
+#st.markdown("<h1 style='text-align: center; color: red;'>Some title</h1>", unsafe_allow_html=True)
     
     
 
