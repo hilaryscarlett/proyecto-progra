@@ -12,6 +12,7 @@ def download_data():
     urllib.request.urlretrieve(url,filename)
     df=pd.read_csv("fallecidos_covid")
     return df
+
 st.subheader("Datos generales proporcionados por el Ministerio de Salud sobre el número de fallecidos")
 c=download_data()
 
@@ -20,5 +21,13 @@ chart_data = pd.DataFrame(
     columns=['DISTRITO', 'PROVINCIA', 'SEXO'])
 
 st.line_chart(chart_data)
+
+st.subheader("Incidencia de muertes por covid_19 según sexo")
+
+chart_data2 = pd.DataFrame(
+    np.random.randn(20, 3),
+    columns2=['SEXO'])
+
+st.line_chart(chart_data2)
 
 
