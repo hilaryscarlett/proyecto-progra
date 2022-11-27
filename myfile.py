@@ -14,7 +14,6 @@ st.set_page_config(
 )
 
 #------------------------------------------------------------------
-
 with st.sidebar:
     selected = option_menu(
         menu_title = 'Menu', 
@@ -25,7 +24,7 @@ with st.sidebar:
     )
 #------------------------------------------------------------------
 
-    
+
 st.sidebar.image('ministerio.png')        
 st.sidebar.write("✝️","DATOS DE LOS FALLECIDOS")
 st.sidebar.write("Datos")
