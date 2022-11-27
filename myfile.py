@@ -6,7 +6,7 @@ from datetime import time
 import datetime
 import urllib.request
 from PIL import Image
-
+base="purple"
 st.set_page_config(
     page_title="FALLECIDOS COVID",
     page_icon="🟡",
