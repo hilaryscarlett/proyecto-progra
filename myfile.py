@@ -33,8 +33,8 @@ with st.sidebar:
         default_index = 0,
     )
     
-#if selected == 'Inicio':
-#st.markdown("<h1 style='text-align: center; color: red;'>Some title</h1>", unsafe_allow_html=True)
+if selected == 'Inicio':
+    st.markdown("<h1 style='text-align: center; color: black;'>Ministerio de Salud</h1>", unsafe_allow_html=True)
     
     
 
