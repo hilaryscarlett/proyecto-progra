@@ -7,6 +7,9 @@ import datetime
 import urllib.request
 from PIL import Image
 
+[theme]
+base="dark"
+
 
 
 st.set_page_config(
