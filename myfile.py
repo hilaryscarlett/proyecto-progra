@@ -32,11 +32,15 @@ def download_data():
   urllib.request.urlretrieve(url,filename)
   df=pd.read_csv("fallecidos_covid")
   return df
-  
+ 
+#  
+st.subheader("Datos generales proporcionados por el Ministerio de Salud sobre el número de fallecidos")
 c=download_data()
 #st.write("dimensiones: "+str(c.shape[0])+"filas"+str(c.shape[1])+"columnas")
 st.dataframe(c)
-st.subheader("caracteristicas del dataset")
+
+# CUADRO DE CARACTERÍSTICAS DEL DATASET
+st.subheader("Caracteríticas del Dataset")
 st.write(c.describe())
 
 
