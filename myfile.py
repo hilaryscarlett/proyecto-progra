@@ -34,7 +34,7 @@ with st.sidebar:
     )
     
 if selected == 'Inicio':
-    st.markdown("<h1 style='text-align: center; color: black;'>Situación actual covid-19</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; color: black;'>SITUACIÓN ACTUAL COVID-19</h1>", unsafe_allow_html=True)
     
     
 if selected == 'Datos':
