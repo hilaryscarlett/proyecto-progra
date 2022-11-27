@@ -24,10 +24,10 @@ st.line_chart(chart_data)
 
 st.subheader("Incidencia de muertes por covid_19 según sexo")
 
-chart_data2 = pd.DataFrame(
+chart_data = pd.DataFrame(
     np.random.randn(20, 3),
-    columns2=['SEXO'])
+    columns=['SEXO'])
 
-st.line_chart(chart_data2)
+st.line_chart(chart_data)
 
 
