@@ -1,6 +1,11 @@
+import streamlit as st
 import pandas as pd
 import numpy as np
-import streamlit as st
+from datetime import time
+import datetime
+import urllib.request
+from PIL import Image
+from streamlit_option_menu import option_menu
 def download_data():
     url='https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv'
     filename="fallecidos_covid"
