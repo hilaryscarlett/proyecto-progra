@@ -22,7 +22,7 @@ with st.sidebar:
         options = ['Inicio', 'Reportes', 'Equipo'],
         icons = ['house', 'book', 'people'],
         menu_icon='dog',
-        default_index = 0,
+        default = 0,
     )
 #------------------------------------------------------------------
 
