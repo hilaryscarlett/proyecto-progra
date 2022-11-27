@@ -25,7 +25,6 @@ with st.sidebar:
         icons = ['house','map','book','people'],
         menu_icon='cast',
         default_index = 0,
-        orientation="horizontal",
     )
     
 
