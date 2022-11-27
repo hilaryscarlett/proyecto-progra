@@ -33,7 +33,7 @@ with st.sidebar:
         default_index = 0,
     )
     
-if selected == 'Inicio':
+if selected == 'Localización':
     st.markdown("<h1 style='text-align: center; color: black;'>Ministerio de Salud</h1>", unsafe_allow_html=True)
     
     
