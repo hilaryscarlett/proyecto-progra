@@ -20,6 +20,8 @@ with st.sidebar:
         icons = ['house', 'book', 'people'],
         menu_icon='cast',
         default_index = 0,
+        
+    )
 
 st.sidebar.image('ministerio.png')        
 st.sidebar.write("✝️","DATOS DE LOS FALLECIDOS")
