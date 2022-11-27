@@ -16,3 +16,4 @@ chart_data = pd.DataFrame(
 
 st.line_chart(chart_data)
 
+
