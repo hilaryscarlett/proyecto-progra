@@ -7,7 +7,7 @@ import datetime
 import urllib.request
 from PIL import Image
 
-[theme]
+
 primaryColor="#F63366"
 backgroundColor="#FFFFFF"
 secondaryBackgroundColor="#F0F2F6"
