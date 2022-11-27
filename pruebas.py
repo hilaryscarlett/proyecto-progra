@@ -5,7 +5,7 @@ import plotly.express as px
 excel_file="fallecidos_covid.xslx"
 sheet_name="fallecidos_covid"
 df=pd.read_excel(excel_file,
-                sheet_name=sheet_name
+                sheet_name=sheet_name,
                 usecols="D:G",
                 header=2)
 df_dato1=df.groupby(["SEXO"], as_index=false)["PROVINCIA"].count()
