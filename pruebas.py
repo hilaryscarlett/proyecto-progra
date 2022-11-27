@@ -3,9 +3,9 @@ import numpy as np
 import plotly.express as px
 
 streamlit run [Home.py]
-Home.py # This is the file you run with "streamlit run"
-     pages
-  About.py
-  Page_two.py
-  😎_three.py
+Home.py
+pages
+About.py
+2_Page_two.py
+3_😎_three.py
   
