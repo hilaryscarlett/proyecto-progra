@@ -7,8 +7,7 @@ import datetime
 import urllib.request
 from PIL import Image
 
-col1, col2 = st.columns(2)
-with col2:
+with st.sidebar:
     my_component(greeting="hello")
 
 
