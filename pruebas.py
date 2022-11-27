@@ -29,6 +29,13 @@ chart_data = pd.DataFrame(
     columns=['SEXO'])
 
 st.line_chart(chart_data)
+import pandas as pd
+import numpy as np
 
+chart_data = pd.DataFrame(
+    np.random.randn(100, 3),
+    columns=['EDAD_DECLARADA', 'DISTRITO', 'UBIGEO'])
+
+st.area_chart(chart_data)
 
 
