@@ -7,18 +7,17 @@ import datetime
 import urllib.request
 from PIL import Image
 
-import altair as alt
-st.sidebar.image('ministerio.png')
-image1 = Image.open('ministerio.png')
-st.image(image1, use_column_width=True)
+
+st.sidebar.image('Logo_Oficial.png')
+
          
 st.sidebar.write("UNIVERSIDAD PERUANA CAYETANO HEREDIA")
 st.sidebar.write("Datos")
 
 st.header("FALLECIDOS A CAUSA COVID-19")
 
-image = Image.open('ministerio.png')
 
+image = Image.open('ministerio.png')
 st.image(image, caption='Datos')
 
 st.subheader("Datos proporcionados por el Ministerio de Salud (MINSA)")
