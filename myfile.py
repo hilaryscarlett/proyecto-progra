@@ -13,7 +13,7 @@ st.set_page_config(
     page_icon="🟡",
 )
 
-st.sidebar.image('Logo_Oficial.png')        
+st.sidebar.image('ministerio.png')        
 st.sidebar.write("✝️","DATOS DE LOS FALLECIDOS")
 st.sidebar.write("Datos")
 
