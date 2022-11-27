@@ -10,7 +10,7 @@ import altair as alt
 st.sidebar.write("UNIVERSIDAD PERUANA CAYETANO HEREDIA")
 st.sidebar.write("clasificacion por edad")
 
-st.header("Fallecidos por COVID-19")
+st.header("Fallecidos 22 por COVID-19")
 
 
 from PIL import Image
