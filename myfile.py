@@ -10,7 +10,7 @@ from PIL import Image
 import altair as alt
 st.sidebar.image('ministerio.png')
 image1 = Image.open('ministerio.png')
-st.image(image1, caption=use_column_width=True)
+st.image(image1, use_column_width=True)
          
 st.sidebar.write("UNIVERSIDAD PERUANA CAYETANO HEREDIA")
 st.sidebar.write("Datos")
