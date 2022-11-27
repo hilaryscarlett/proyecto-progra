@@ -42,7 +42,8 @@ with st.sidebar:
 
 
 st.image('ministerio.png')
-st.header("FALLECIDOS POR COVID-19")
+st.markdown("<h1 style='text-align: center; color: blue;'>FALLECIDOS POR COVID-19</h1>", unsafe_allow_html=True)
+
 st.subheader("Datos proporcionados por el Ministerio de Salud (MINSA)")
 st.caption("En esta página web se realizó el registro diario de muertes por Covid-19 y se mostrarán gráficas e imágenes")
 text=st
