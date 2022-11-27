@@ -33,21 +33,26 @@ with st.sidebar:
         default_index = 0,
     )
     
+if selected == 'Inicio':
+    
+    
 if selected == 'Localización':
+    st.image('ministerio.png')
+    st.markdown("<h1 style='text-align: center; color: black;'>Fallecidos por Covid-19</h1>", unsafe_allow_html=True)
+    st.subheader("Datos proporcionados por el Ministerio de Salud (MINSA)")
+    st.caption("En esta página web se realizó el registro diario de muertes por Covid-19 y se mostrarán gráficas e imágenes")
+    text=st
+   
+    
+if selected == 'Reportes':
+    st.markdown("<h1 style='text-align: center; color: black;'>Ministerio de Salud</h1>", unsafe_allow_html=True)
+    
+if selected == 'Equipo':
     st.markdown("<h1 style='text-align: center; color: black;'>Ministerio de Salud</h1>", unsafe_allow_html=True)
     
     
 
 #--------------------------------------------------------------------------------------------
-
-
-st.image('ministerio.png')
-st.markdown("<h1 style='text-align: center; color: blue;'>FALLECIDOS POR COVID-19</h1>", unsafe_allow_html=True)
-
-st.subheader("Datos proporcionados por el Ministerio de Salud (MINSA)")
-st.caption("En esta página web se realizó el registro diario de muertes por Covid-19 y se mostrarán gráficas e imágenes")
-text=st
-
 
 def download_data():
   url='https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv'
