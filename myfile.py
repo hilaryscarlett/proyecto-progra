@@ -20,11 +20,10 @@ st.sidebar.write("✝️","DATOS DE LOS FALLECIDOS")
 
 st.sidebar.write("Datos")
 
-st.header("FALLECIDOS POR COVID-19")
+st.header("FALLECIDOS POR COVID-19"),st.image('ministerio.png')
 
 
 
-st.image('ministerio.png')
 
 st.subheader("Datos proporcionados por el Ministerio de Salud (MINSA)")
 st.caption("En esta página web se realizó el registro diario de muertes por Covid-19 y se mostrarán gráficas e imágenes")
