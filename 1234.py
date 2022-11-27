@@ -9,7 +9,7 @@ st.set_page_config(
     page_icon="🟡",
 
 
-st.header("FALLECIDOS COVID")
+#st.header("FALLECIDOS COVID")
 
  #def download_data():
   #url='https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv'
