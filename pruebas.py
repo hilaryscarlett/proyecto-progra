@@ -1,13 +1,21 @@
 import pandas as pd
 import numpy as np
-from streamlit_option_menu import option_menu
-#$ pip install streamlit-option-menu
-with st.sidebar:
-  selected=option_menu(
-    menu_title = "Menú",
-    options=["inicio","local","reported","equipo"],
-    icons=["house","map","book","people"],
-    menu_icon="cast",
-    default_index =0,
-  )
-  
+import numpy as np
+import plotly.figure_factory as ff
+
+# Add histogram data
+x1 = np.random.randn(200) - 2
+x2 = np.random.randn(200)
+x3 = np.random.randn(200) + 2
+
+# Group data together
+hist_data = [x1, x2, x3]
+
+group_labels = ['Group 1', 'Group 2', 'Group 3']
+
+# Create distplot with custom bin_size
+fig = ff.create_distplot(
+        hist_data, group_labels, bin_size=[.1, .25, .5])
+
+# Plot!
+st.plotly_chart(fig, use_container_width=True)
