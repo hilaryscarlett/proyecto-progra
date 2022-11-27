@@ -42,7 +42,8 @@ if selected == 'Inicio':
                "cualquier tipo de superficie (pasamanos, mesas, lapiceros, entre otros), e ingresar al organismo cuando nos tocamos los",
                "ojos, nariz o boca con las manos sin lavar luego de haber tocado esas superficies contaminadas. Las personas mayores y ",
                "las que sufren enfermedades respiratorias, diabetes o cardiopatías podrían desarrollar el virus en un nivel grave, si",
-               "llegaran a contraerlo.")
+               "llegaran a contraerlo."
+              )
     st.subheader("SINTOMAS:")
     st.caption("- Fiebre") 
     st.caption("- Tos seca")
