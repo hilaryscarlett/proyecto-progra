@@ -19,7 +19,7 @@ st.set_page_config(
     page_icon="🟡",
 )
 
-st.sidebar.image('Logo_Oficial.png')        
+st.sidebar.image('Logo_Oficial.png',primaryColor="#C4C4AFB4")        
 st.sidebar.write("✝️","DATOS DE LOS FALLECIDOS")
 
 
