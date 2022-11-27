@@ -38,12 +38,12 @@ if selected == 'Inicio':
     st.subheader("¿QUÉ ES LA COVID-19?")
     st.caption("Una enfermedad infecciosa causada por el coronavirus SARS-CoV-2, que se propaga de persona a persona a través de gotitas, partículas acuosas o aerosoles expulsados por individuos infectados al momento de hablar, toser, estornudar, o incluso respirar. El virus puede ser inhalado por las personas que están cerca al enfermo y también puede contaminar cualquier tipo de superficie (pasamanos, mesas, lapiceros, entre otros), e ingresar al organismo cuando nos tocamos los ojos, nariz o boca con las manos sin lavar luego de haber tocado esas superficies contaminadas. Las personas mayores y las que sufren enfermedades respiratorias, diabetes o cardiopatías podrían desarrollar el virus en un nivel grave, si llegaran a contraerlo.")
     st.subheader("SINTOMAS:")
-    st.caption(* "Fiebre") 
-    st.caption(* "Tos seca")
-    st.caption(* "Cansansio") 
-    st.caption(* "Dolor de garganta")
-    st.caption(* "Dificultad para respirar") 
-    st.caption(* "Congestión nasal")
+    st.caption("- Fiebre") 
+    st.caption("- Tos seca")
+    st.caption("- Cansansio") 
+    st.caption("- Dolor de garganta")
+    st.caption("- Dificultad para respirar") 
+    st.caption("- Congestión nasal")
     text=st
     
 if selected == 'Datos':
