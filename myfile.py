@@ -7,13 +7,9 @@ import datetime
 import urllib.request
 from PIL import Image
 
-with st.sidebar:
-    my_component(greeting="hello")
-
-
 
 st.set_page_config(
-    page_title="FALLECIDOS COVID",
+    page_title="FALLECIDOS COVID-19",
     page_icon="🟡",
 )
 
