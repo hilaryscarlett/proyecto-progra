@@ -8,7 +8,7 @@ import urllib.request
 
 import altair as alt
 st.sidebar.write("UNIVERSIDAD PERUANA CAYETANO HEREDIA")
-
+st.sidebar.write("clasificacion por edad")
 
 st.title("Fallecidos por COVID-19")
 
