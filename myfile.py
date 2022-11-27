@@ -8,6 +8,7 @@ from PIL import Image
 from streamlit_option_menu import option_menu
 import matplotlib.pyplot as plt
 
+
 st.set_page_config(
     page_title="FALLECIDOS COVID",
     page_icon="🔴",
