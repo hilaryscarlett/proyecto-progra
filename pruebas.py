@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 from streamlit_option_menu import option_menu
-
+#$ pip install option_menu
 with st.sidebar:
   selected=option_menu(
     menu_title = "Menú",
