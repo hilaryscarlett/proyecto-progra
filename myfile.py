@@ -11,15 +11,14 @@ st.set_page_config(
     page_title="FALLECIDOS COVID",
     page_icon="🟡",
 )
-
+#---------------------------------------------------------------------------------------
 st.sidebar.image('Logo_Oficial.png')        
-st.sidebar.write("Programación Avanzada",
-                "Proyecto 2022-2")
+st.sidebar.write("<h1 style = 'text-align: center'>Programación Avanzada:</h1>")
 
 st.sidebar.info("INTEGRANTES: Consuelo, Melanie y Hilary")
                 
 st.sidebar.success('Recopilación de datos sobre la defuncion por Covid-19 del Ministerio de Salud')
-st.sidebar.write("Datos")
+
 
 with st.sidebar:
     selected = option_menu(
@@ -30,9 +29,11 @@ with st.sidebar:
         default_index = 0,
     )
     
+if selected == 'Inicio':
+    
+    
 
-
-
+#--------------------------------------------------------------------------------------------
 
 
 st.image('ministerio.png')
