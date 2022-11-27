@@ -33,7 +33,7 @@ with st.sidebar:
         default_index = 0,
     )
     
-if selected == 'Inicio':
+if selected == 'INICIO':
     st.markdown("<h1 style='text-align: center; color: red;'>SITUACIÓN ACTUAL COVID-19</h1>", unsafe_allow_html=True)
     st.subheader("¿QUÉ ES LA COVID-19?")
     st.caption("Una enfermedad infecciosa causada por el coronavirus SARS-CoV-2, que se propaga de persona a persona a través de gotitas, partículas acuosas o aerosoles expulsados por individuos infectados al momento de hablar, toser, estornudar, o incluso respirar. El virus puede ser inhalado por las personas que están cerca al enfermo y también puede contaminar cualquier tipo de superficie (pasamanos, mesas, lapiceros, entre otros), e ingresar al organismo cuando nos tocamos los ojos, nariz o boca con las manos sin lavar luego de haber tocado esas superficies contaminadas. Las personas mayores y las que sufren enfermedades respiratorias, diabetes o cardiopatías podrían desarrollar el virus en un nivel grave, si llegaran a contraerlo.")
@@ -46,7 +46,7 @@ if selected == 'Inicio':
     st.caption("- Congestión nasal")
     text=st
     
-if selected == 'Datos':
+if selected == 'DATOS':
   
    
     st.image('ministerio.png')
@@ -70,10 +70,26 @@ if selected == 'Datos':
     st.subheader("Características del Dataset")
     st.write(c.describe())
     
-   
-   
 
+    
+if selected == 'INFORMACIÓN ESTADÍSTICA':    
+    st.markdown("<h1 style='text-align: center; color: black;'>Ministerio de Salud</h1>", unsafe_allow_html=True)
+    <?php
+  function pie() {
+        $this->load->library('phpgraphlib');
+	$this->load->library('phpgraphlibpie');
+	$graph = new PHPGraphLibPie(330, 240);
+        var $data = array(); //Lo llenan con json, xml, mysql, etc
+	$graph->addData($data);
+        //El name lo obtienen de alguna consulta
+	$graph->setTitle('Menciones por #Hashtag : '.utf8_decode($name).'');
+	$graph->setTextColor("blue");	
+	$graph->setLabelTextColor('50,50,50');
+	$graph->setLegendTextColor('50,50,50');
+	$graph->createGraph();
+   }
 
+   >
    
     
 if selected == 'Reportes':
