@@ -34,10 +34,10 @@ def download_data():
   return df
   
 c=download_data()
-st.write("dimensiones: "+str(c.shape[0])+"filas"+str(c.shape[1])+"columnas")
+#st.write("dimensiones: "+str(c.shape[0])+"filas"+str(c.shape[1])+"columnas")
 st.dataframe(c)
 st.subheader("caracteristicas del dataset")
-#st.write(c.describe())
+st.write(c.describe())
 
 
 chart_data = pd.DataFrame(
