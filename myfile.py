@@ -9,11 +9,11 @@ from streamlit_option_menu import option_menu
 
 st.set_page_config(
     page_title="FALLECIDOS COVID",
-    page_icon="🟡",
+    page_icon="🔴",
 )
 #---------------------------------------------------------------------------------------
 st.sidebar.image('Logo_Oficial.png')        
-st.sidebar.markdown("<h1 style = 'text-align: center'>Programación Avanzada:</h1>")
+st.sidebar.markdown("Programación Avanzada")
 
 st.sidebar.info("INTEGRANTES: Consuelo, Melanie y Hilary")
                 
