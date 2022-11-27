@@ -9,7 +9,13 @@ import urllib.request
 import altair as alt
 st.sidebar.write("UNIVERSIDAD PERUANA CAYETANO HEREDIA")
 
+
 st.title("Fallecidos por COVID-19")
+
+from PIL import Image
+image = Image.open('sunrise.jpg')
+
+st.image(image, caption='Sunrise by the mountains')
 
 st.caption("En esta página web se realizó el registro diario de muertes por Covid-19 y se mostrarán gráficas e imágenes")
 text=st
@@ -36,32 +42,6 @@ chart_data = pd.DataFrame(
 st.bar_chart(chart_data)
 
 
-
-import plotly.express as px
-
-
-df = pd.DataFrame(
-    np.random.randint(1, 6, size=(100, 2)), columns=["Item_Name", "Rating_Score"]
-)
-
-df = (
-    df.groupby("Rating_Score")
-    .count()
-    .reset_index()
-    .rename(columns={"Item_Name": "Count"})
-)
-df["Item_Name"] = "Samsung Galaxy S20 FE 5G"
-st.dataframe(df)
-
-fig = px.bar(
-    df,
-    x="Rating_Score",
-    y="Count",
-    color="Rating_Score",
-    text="Count",
-)
-
-st.plotly_chart(fig)
 
 
 tittle=st.text_input('Nombre y Apellidos:')
