@@ -13,7 +13,7 @@ st.set_page_config(
 )
 
 st.sidebar.image('Logo_Oficial.png')        
-st.sidebar.write("👨‍⚕️ ","DATOS DE LOS FALLECIDOS")
+st.sidebar.write("✝️","DATOS DE LOS FALLECIDOS")
 st.sidebar.write("Datos")
 
 st.header("FALLECIDOS A CAUSA COVID-19")
