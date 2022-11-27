@@ -19,7 +19,7 @@ with st.sidebar:
         options = ['Inicio', 'Reportes', 'Equipo'],
         icons = ['house', 'book', 'people'],
         menu_icon='cast',
-        default_index =0,
+        default_index = 0,
     )
 
 st.sidebar.image('ministerio.png')        
