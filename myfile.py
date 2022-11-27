@@ -76,7 +76,7 @@ if selected == 'DATOS':
     
 if selected == 'INFORMACIÓN ESTADÍSTICA':    
     st.markdown("<h1 style='text-align: center; color: black;'>Ministerio de Salud</h1>", unsafe_allow_html=True)
-    porcentaje = [63.2738618426805,36.726138157319504]
+    porcentaje = [63.27,36.73]
     sexo = ["M","F"]
     colores = ["#60D394","#FFD97D"]
     plt.pie(porcentaje, labels=sexo, autopct="%0.1f %%", colors=colores)
