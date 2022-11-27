@@ -18,7 +18,7 @@ with st.sidebar:
         menu_title = 'Menu', 
         options = ['Inicio', 'Reportes', 'Equipo'],
         icons = ['house', 'book', 'people'],
-        menu_icon='cast',
+        menu_icon='dog',
         default_index = 0,
     )
 
