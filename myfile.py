@@ -1,5 +1,6 @@
 #$ pip install streamlit --upgrade
-#$ pip install streamlit-option-menu
+pip install streamlit-option-menu
+
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -8,7 +9,6 @@ import datetime
 import urllib.request
 from PIL import Image
 from streamlit_option_menu import option_menu
-
 
 st.set_page_config(
     page_title="FALLECIDOS COVID",
