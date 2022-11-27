@@ -8,18 +8,13 @@ import urllib.request
 from PIL import Image
 
 
-primaryColor="#C4C4AFB4"
-backgroundColor="#FFFFFF"
-secondaryBackgroundColor="#F0F2F6"
-textColor="#262730"
-font="sans serif"
 
 st.set_page_config(
     page_title="FALLECIDOS COVID",
     page_icon="🟡",
 )
 
-st.sidebar.image('Logo_Oficial.png',primaryColor="#C4C4AFB4")        
+st.sidebar.image('Logo_Oficial.png')        
 st.sidebar.write("✝️","DATOS DE LOS FALLECIDOS")
 
 
