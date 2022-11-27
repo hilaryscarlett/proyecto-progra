@@ -6,7 +6,14 @@ from datetime import time
 import datetime
 import urllib.request
 from PIL import Image
-base="purple"
+
+[theme]
+primaryColor="#F63366"
+backgroundColor="#FFFFFF"
+secondaryBackgroundColor="#F0F2F6"
+textColor="#262730"
+font="sans serif"
+
 st.set_page_config(
     page_title="FALLECIDOS COVID",
     page_icon="🟡",
