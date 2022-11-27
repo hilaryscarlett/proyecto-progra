@@ -12,12 +12,15 @@ st.set_page_config(
     page_icon="🟡",
 )
 
-
-selected2 = option_menu(None, ["Home", "Upload", "Tasks", 'Settings'], 
-    icons=['house', 'cloud-upload', "list-task", 'gear'], 
-    menu_icon="cast", default_index=0, orientation="horizontal")
-selected2
-
+with st.sidebar:
+    selected = option_menu(
+        menu_tittle='Menu',
+        options = ['Inicio','Localización','Reportes','Equipo']
+        icons=['house','map','book','people']
+        menu_icon='cast'
+        default_index=0,
+    )
+    
 
 st.sidebar.image('ministerio.png')        
 st.sidebar.write("✝️","DATOS DE LOS FALLECIDOS")
