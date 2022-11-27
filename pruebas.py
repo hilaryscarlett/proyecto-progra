@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import plotly.express as px
 
-streamlit run [Home.py]
+streamlit run Home.py
 Home.py
 pages
 About.py
