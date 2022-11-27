@@ -6,7 +6,6 @@ import datetime
 import urllib.request
 from PIL import Image
 from streamlit_option_menu import option_menu
-import matplotlib.pyplot as plt
 
 
 st.set_page_config(
@@ -76,13 +75,7 @@ if selected == 'DATOS':
     
 if selected == 'INFORMACIÓN ESTADÍSTICA':    
     st.markdown("<h1 style='text-align: center; color: black;'>Ministerio de Salud</h1>", unsafe_allow_html=True)
-    porcentaje = [63.27,36.73]
-    sexo = ["M","F"]
-    colores = ["#60D394","#FFD97D"]
-    plt.pie(porcentaje, labels=sexo, autopct="%0.1f %%", colors=colores)
-    plt.axis("equal")
-    plt.show()
-   
+
     
 if selected == 'Reportes':
     st.markdown("<h1 style='text-align: center; color: black;'>Ministerio de Salud</h1>", unsafe_allow_html=True)
