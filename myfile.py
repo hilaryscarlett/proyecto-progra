@@ -8,7 +8,7 @@ import urllib.request
 from PIL import Image
 
 
-primaryColor="#F63366"
+primaryColor="#C4C4AFB4"
 backgroundColor="#FFFFFF"
 secondaryBackgroundColor="#F0F2F6"
 textColor="#262730"
