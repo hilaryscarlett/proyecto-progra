@@ -10,7 +10,9 @@ import altair as alt
 st.sidebar.write("UNIVERSIDAD PERUANA CAYETANO HEREDIA")
 st.sidebar.write("clasificacion por edad")
 
-st.header("Fallecidos 22 por COVID-19")
+st.header("FALLECIDOS A CAUSA COVID-19")
+st.caption("En esta página web se realizó el registro diario de muertes por Covid-19 y se mostrarán gráficas e imágenes")
+text=st
 
 
 from PIL import Image
@@ -18,8 +20,6 @@ image = Image.open('descarga.jpg')
 
 st.image(image, caption='Sunrise by the mountains')
 
-st.caption("En esta página web se realizó el registro diario de muertes por Covid-19 y se mostrarán gráficas e imágenes")
-text=st
 
 
 
