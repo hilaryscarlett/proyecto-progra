@@ -15,9 +15,9 @@ st.set_page_config(
 with st.sidebar:
     selected = option_menu(
         menu_tittle='Menu',
-        options = ['Inicio','Localización','Reportes','Equipo']
-        icons=['house','map','book','people']
-        menu_icon='cast'
+        options = ['Inicio','Localización','Reportes','Equipo'],
+        icons=['house','map','book','people'],
+        menu_icon='cast',
         default_index=0,
     )
     
