@@ -13,7 +13,9 @@ st.set_page_config(
 )
 
 st.sidebar.image('Logo_Oficial.png')        
-st.sidebar.write("✝️","DATOS DE LOS FALLECIDOS")
+st.sidebar.write("Programación Avanzada",
+                "Proyecto 2022-2")
+
 st.sidebar.write("Datos")
 
 with st.sidebar:
@@ -23,6 +25,7 @@ with st.sidebar:
         icons = ['house','map','book','people'],
         menu_icon='cast',
         default_index = 0,
+        orientation="horizontal",
     )
     
 
