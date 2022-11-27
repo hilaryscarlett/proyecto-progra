@@ -13,7 +13,7 @@ st.sidebar.write("UNIVERSIDAD PERUANA CAYETANO HEREDIA")
 st.title("Fallecidos por COVID-19")
 
 from PIL import Image
-image = Image.open('sunrise.jpg')
+image = Image.open('descarga.jpg')
 
 st.image(image, caption='Sunrise by the mountains')
 
