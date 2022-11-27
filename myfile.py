@@ -8,10 +8,8 @@ import urllib.request
 from PIL import Image
 
 
-st.sidebar.image('Logo_Oficial.png')
-
-         
-st.sidebar.write("UNIVERSIDAD PERUANA CAYETANO HEREDIA")
+st.sidebar.image('Logo_Oficial.png')        
+st.sidebar.write("😞","DATOS DE LOS FALLECIDOS")
 st.sidebar.write("Datos")
 
 st.header("FALLECIDOS A CAUSA COVID-19")
