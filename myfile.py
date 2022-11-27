@@ -11,6 +11,9 @@ st.set_page_config(
     page_title="FALLECIDOS COVID",
     page_icon="🔴",
 )
+
+st.markdown("<h1 style='text-align: center; color: red;'>Some title</h1>", unsafe_allow_html=True)
+
 #---------------------------------------------------------------------------------------
 st.sidebar.image('Logo_Oficial.png')        
 st.sidebar.markdown("Programación Avanzada")
