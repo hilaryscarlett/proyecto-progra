@@ -33,10 +33,10 @@ def download_data():
   df=pd.read_csv("fallecidos_covid")
   return df
   
-#c=download_data()
-#st.write("dimensiones: "+str(c.shape[0])+"filas"+str(c.shape[1])+"columnas")
-#st.dataframe(c)
-#st.subheader("caracteristicas del dataset")
+c=download_data()
+st.write("dimensiones: "+str(c.shape[0])+"filas"+str(c.shape[1])+"columnas")
+st.dataframe(c)
+st.subheader("caracteristicas del dataset")
 #st.write(c.describe())
 
 
