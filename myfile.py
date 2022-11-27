@@ -16,7 +16,7 @@ st.sidebar.image('Logo_Oficial.png')
 st.sidebar.write("Programación Avanzada",
                 "Proyecto 2022-2")
 
-st.sidebar.write("INTEGRANTES",
+st.sidebar.info("INTEGRANTES",
                 "- Gutierrez, Consuelo",
                 "- Malca, Melanie",
                 "- Ramirez, Hilary")
