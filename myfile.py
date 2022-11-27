@@ -15,17 +15,12 @@ st.set_page_config(
 
 st.sidebar.image('Logo_Oficial.png')        
 st.sidebar.write("✝️","DATOS DE LOS FALLECIDOS")
-
-
-
 st.sidebar.write("Datos")
 
-st.header("FALLECIDOS POR COVID-19")
+
+
 st.image('ministerio.png')
-
-
-
-
+st.header("FALLECIDOS POR COVID-19")
 st.subheader("Datos proporcionados por el Ministerio de Salud (MINSA)")
 st.caption("En esta página web se realizó el registro diario de muertes por Covid-19 y se mostrarán gráficas e imágenes")
 text=st
@@ -38,11 +33,11 @@ def download_data():
   df=pd.read_csv("fallecidos_covid")
   return df
   
-c=download_data()
-st.write("dimensiones: "+str(c.shape[0])+"filas"+str(c.shape[1])+"columnas")
-st.dataframe(c)
-st.subheader("caracteristicas del dataset")
-st.write(c.describe())
+#c=download_data()
+#st.write("dimensiones: "+str(c.shape[0])+"filas"+str(c.shape[1])+"columnas")
+#st.dataframe(c)
+#st.subheader("caracteristicas del dataset")
+#st.write(c.describe())
 
 
 chart_data = pd.DataFrame(
