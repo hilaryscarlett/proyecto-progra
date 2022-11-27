@@ -14,7 +14,7 @@ st.set_page_config(
 
 st.sidebar.image('Logo_Oficial.png')        
 st.sidebar.write("✝️","DATOS DE LOS FALLECIDOS")
-st.sidebar.[DATOS DE LOS FALLECIDOS]
+st.sidebar.["DATOS DE LOS FALLECIDOS"]
 
 
 st.sidebar.write("Datos")
