@@ -16,7 +16,7 @@ st.set_page_config(
 
 #---------------------------------------------------------------------------------------
 st.sidebar.image('Logo_Oficial.png')
-st.sidebar.markdown("<h1 style='text-align: center; color: red;'>Programación Avanzada / Proyecto 2022-2</h1>", unsafe_allow_html=True)
+st.sidebar.markdown("<h1 style='text-align: center; color: green;'>Programación Avanzada / Proyecto 2022-2</h1>", unsafe_allow_html=True)
 
 
 st.sidebar.info("INTEGRANTES: Consuelo, Melanie y Hilary")
