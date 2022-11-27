@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 from datetime import time
 import datetime
-#import urllib.request
+import urllib.request
 
 import altair as alt
 st.sidebar.write("UNIVERSIDAD PERUANA CAYETANO HEREDIA")
