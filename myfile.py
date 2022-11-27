@@ -34,7 +34,7 @@ with st.sidebar:
     )
     
 if selected == 'Inicio':
-    st.markdown("<h1 style='text-align: center; color: black;'>SITUACIÓN ACTUAL COVID-19</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; color: red;'>SITUACIÓN ACTUAL COVID-19</h1>", unsafe_allow_html=True)
     
     
 if selected == 'Datos':
@@ -75,29 +75,29 @@ if selected == 'Equipo':
 #--------------------------------------------------------------------------------------------
 
 
-chart_data = pd.DataFrame(
-    np.random.randn(20, 1),
-    columns=["a"])
+#chart_data = pd.DataFrame(
+    #np.random.randn(20, 1),
+    #columns=["a"])
 
-st.bar_chart(chart_data)
-
-
+#st.bar_chart(chart_data)
 
 
-tittle=st.text_input('Nombre y Apellidos:')
-st.write(tittle)
-
-d= st.date_input("Fecha de fallecimiento",datetime.date(2019, 7, 6))
-st.write("ingresar fecha de fallecimiento:", d)
-
-choice = st.selectbox("Sexo", ["Femenino","Masculino"])
 
 
-option = st.selectbox('¿Cómo desearía ser contactado/a?',('Email', 'Teléfono','Whatsapp'))
-st.write('Seleccionó:', option)
+#tittle=st.text_input('Nombre y Apellidos:')
+#st.write(tittle)
 
-tittle=st.text_input('Ingrese la opción que eligió')
-st.write("Número de teléfono o email de contecto:", tittle)
+#d= st.date_input("Fecha de fallecimiento",datetime.date(2019, 7, 6))
+#st.write("ingresar fecha de fallecimiento:", d)
+
+#choice = st.selectbox("Sexo", ["Femenino","Masculino"])
+
+
+#option = st.selectbox('¿Cómo desearía ser contactado/a?',('Email', 'Teléfono','Whatsapp'))
+#st.write('Seleccionó:', option)
+
+#tittle=st.text_input('Ingrese la opción que eligió')
+#st.write("Número de teléfono o email de contecto:", tittle)
 
 
 
