@@ -20,7 +20,8 @@ st.sidebar.write("✝️","DATOS DE LOS FALLECIDOS")
 
 st.sidebar.write("Datos")
 
-st.header("FALLECIDOS POR COVID-19"),st.image('ministerio.png')
+st.header.image("FALLECIDOS POR COVID-19",'ministerio.png')
+#,st.image()
 
 
 
