@@ -5,13 +5,18 @@ import numpy as np
 from datetime import time
 import datetime
 import urllib.request
+from PIL import Image
 
 import altair as alt
+st.sidebar.image('ministerio.png')
+image1 = Image.open('ministerio.png')
+st.image(image1, caption=use_column_width=True)
+         
 st.sidebar.write("UNIVERSIDAD PERUANA CAYETANO HEREDIA")
-st.sidebar.write("clasificacion por edad")
+st.sidebar.write("Datos")
 
 st.header("FALLECIDOS A CAUSA COVID-19")
-from PIL import Image
+
 image = Image.open('ministerio.png')
 
 st.image(image, caption='Datos')
