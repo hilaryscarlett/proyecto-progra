@@ -28,13 +28,13 @@ st.sidebar.success('Recopilación de datos sobre la defuncion por Covid-19 del M
 with st.sidebar:
     selected = option_menu(
         menu_title='Menu',
-        options = ['Inicio','Datos','Reportes','Equipo'],
+        options = ['Inicio','Datos','Información estadística','Equipo'],
         icons = ['house','map','book','people'],
         menu_icon='cast',
         default_index = 0,
     )
     
-if selected == 'INICIO':
+if selected == 'Inicio':
     st.markdown("<h1 style='text-align: center; color: red;'>SITUACIÓN ACTUAL COVID-19</h1>", unsafe_allow_html=True)
     st.subheader("¿QUÉ ES LA COVID-19?")
     st.caption("Una enfermedad infecciosa causada por el coronavirus SARS-CoV-2, que se propaga de persona a persona a través de gotitas, partículas acuosas o aerosoles expulsados por individuos infectados al momento de hablar, toser, estornudar, o incluso respirar. El virus puede ser inhalado por las personas que están cerca al enfermo y también puede contaminar cualquier tipo de superficie (pasamanos, mesas, lapiceros, entre otros), e ingresar al organismo cuando nos tocamos los ojos, nariz o boca con las manos sin lavar luego de haber tocado esas superficies contaminadas. Las personas mayores y las que sufren enfermedades respiratorias, diabetes o cardiopatías podrían desarrollar el virus en un nivel grave, si llegaran a contraerlo.")
@@ -47,7 +47,7 @@ if selected == 'INICIO':
     st.caption("- Congestión nasal")
     text=st
     
-if selected == 'DATOS':
+if selected == 'Datos':
   
    
     st.image('ministerio.png')
@@ -77,8 +77,8 @@ if selected == 'INFORMACIÓN ESTADÍSTICA':
     st.markdown("<h1 style='text-align: center; color: black;'>Ministerio de Salud</h1>", unsafe_allow_html=True)
 
     
-if selected == 'Reportes':
-    st.markdown("<h1 style='text-align: center; color: black;'>Ministerio de Salud</h1>", unsafe_allow_html=True)
+#if selected == 'Reportes':
+    #st.markdown("<h1 style='text-align: center; color: black;'>Ministerio de Salud</h1>", unsafe_allow_html=True)
     
 if selected == 'Equipo':
     st.markdown("<h1 style='text-align: center; color: black;'>Ministerio de Salud</h1>", unsafe_allow_html=True)
