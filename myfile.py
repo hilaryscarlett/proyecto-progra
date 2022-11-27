@@ -16,12 +16,10 @@ st.set_page_config(
 )
 
 
-with st.sidebar:
-    selected = option_menu("Main Menu", ["Home", 'Settings'], 
-                           icons=['house', 'gear'], menu_icon="cast", default_index=1)
-    selected
-
-
+selected2 = option_menu(None, ["Home", "Upload", "Tasks", 'Settings'], 
+    icons=['house', 'cloud-upload', "list-task", 'gear'], 
+    menu_icon="cast", default_index=0, orientation="horizontal")
+selected2
 
 
 st.sidebar.image('ministerio.png')        
