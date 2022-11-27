@@ -19,7 +19,7 @@ st.sidebar.write("INTEGRANTES",
                 "- Gutierrez, Consuelo",
                 "- Malca, Melanie",
                 "- Ramirez, Hilary")
-st.sidebar.success('This is a success message!', icon="✅")
+st.sidebar.success('Recopilación de datos sobre la defuncion por Covid-19 del Ministerio de Salud')
 st.sidebar.write("Datos")
 
 with st.sidebar:
