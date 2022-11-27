@@ -38,7 +38,7 @@ if selected == 'Inicio':
     
     
 if selected == 'Datos':
-    st.markdown(<p style='text-align: right; color: grey;'>"+img_to_html('ministerio.png')+"</p>", unsafe_allow_html=True)
+    st.markdown(<p style='text-align: center; color: grey;'>"+img_to_html('ministerio.png')+"</p>", unsafe_allow_html=True)
    
     st.image('ministerio.png')
     st.markdown("<h1 style='text-align: center; color: black;'>Fallecidos por Covid-19</h1>", unsafe_allow_html=True)
