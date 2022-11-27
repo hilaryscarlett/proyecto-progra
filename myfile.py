@@ -20,7 +20,7 @@ st.sidebar.write("✝️","DATOS DE LOS FALLECIDOS")
 
 st.sidebar.write("Datos")
 
-st.header("FALLECIDOS A CAUSA COVID-19")
+st.header("FALLECIDOS POR COVID-19")
 
 
 
