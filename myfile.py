@@ -13,7 +13,7 @@ st.set_page_config(
 )
 #---------------------------------------------------------------------------------------
 st.sidebar.image('Logo_Oficial.png')        
-st.sidebar.write("<h1 style = 'text-align: center'>Programación Avanzada:</h1>")
+st.sidebar.markdown("<h1 style = 'text-align: center'>Programación Avanzada:</h1>")
 
 st.sidebar.info("INTEGRANTES: Consuelo, Melanie y Hilary")
                 
