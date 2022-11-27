@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 from datetime import time
 import datetime
-import urllib.request
+#import urllib.request
 
 import altair as alt
 st.sidebar.write("UNIVERSIDAD PERUANA CAYETANO HEREDIA")
@@ -14,14 +14,6 @@ st.header("FALLECIDOS A CAUSA COVID-19")
 st.subheader("Datos proporcionados por el Ministerio de Salud (MINSA)")
 st.caption("En esta página web se realizó el registro diario de muertes por Covid-19 y se mostrarán gráficas e imágenes")
 text=st
-
-
-
-
-
-
-
-
 
 
 def download_data():
