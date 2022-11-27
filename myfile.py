@@ -20,9 +20,6 @@ st.sidebar.write("Datos")
 
 st.header("FALLECIDOS A CAUSA COVID-19")
 
-add_selectbox = st.sidebar.selectbox(
-    "How would you like to be contacted?",
-    ("Email", "Home phone", "Mobile phone")
 
 
 st.image('ministerio.png')
