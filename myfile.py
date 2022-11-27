@@ -6,12 +6,19 @@ from datetime import time
 import datetime
 import urllib.request
 from PIL import Image
-
+from streamlit_option_menu import option_menu
 
 st.set_page_config(
     page_title="FALLECIDOS COVID",
     page_icon="🟡",
 )
+
+with st.sidebar:
+    selected = option_menu(
+        menu_title = 'Menu', 
+        options = ['Inicio', 'Reportes','Equipo'],
+        icons = ['house', 'book', 'people'],
+        menu_icon='cast',default_index = 0,
 
 st.sidebar.image('ministerio.png')        
 st.sidebar.write("✝️","DATOS DE LOS FALLECIDOS")
