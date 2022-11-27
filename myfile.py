@@ -29,7 +29,7 @@ with st.sidebar:
         default_index = 0,
     )
     
-if selected == 'Inicio':
+#if selected == 'Inicio':
     
     
 
