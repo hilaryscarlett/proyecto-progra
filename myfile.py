@@ -9,7 +9,7 @@ from PIL import Image
 
 
 st.set_page_config(
-    page_title="FALLECIDOS COVID-19",
+    page_title="FALLECIDOS COVID",
     page_icon="🟡",
 )
 
