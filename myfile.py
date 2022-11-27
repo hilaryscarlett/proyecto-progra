@@ -16,10 +16,7 @@ st.caption("En esta página web se realizó el registro diario de muertes por Co
 text=st
 
 
-from PIL import Image
-image = Image.open('descarga.jpg')
 
-st.image(image, caption='Sunrise by the mountains')
 
 
 
