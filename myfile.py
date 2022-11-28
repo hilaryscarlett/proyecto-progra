@@ -87,7 +87,7 @@ if selected == 'Equipo':
     
     with col1:
         st.header("Consuelo Mercedes Gutierrez Lopez")
-        st.image("cconsuelo.jpg")
+        st.image("consuelo.jpg")
     with col2:
         st.header("Melanie Nicole Malca Cruzado")
         st.image("conejo.jpg")
