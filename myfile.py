@@ -75,13 +75,15 @@ if selected == 'Datos':
     
 if selected == 'INFORMACIÓN ESTADÍSTICA':    
     st.markdown("<h1 style='text-align: center; color: black;'>Ministerio de Salud</h1>", unsafe_allow_html=True)
+    text.st
+    #---------------------
     porcentaje = [64,36]
     sexo = ["M","F"]
     colores = ["#60D394","#FFD97D"]
     plt.pie(porcentaje, labels=sexo, autopct="%0.1f %%", colors=colores)
     plt.axis("equal")
     plt.show()
-    st.pyplot(plt.axis.fig)
+    st.pyplot(plt)
 
     
 #if selected == 'Reportes':
