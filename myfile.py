@@ -91,9 +91,9 @@ if selected == 'Información estadística':
     nombres = ['AMAZONAS','ÁNCASH','APURÍMAC','AREQUIPA','AYACUCHO','CAJAMARCA','CALLAO','CUSCO','HUANCAVELICA','HUÁNUCO','ICA','JUNIN','LA LIBERTAD','LAMBAYEQUE','LIMA','LORETO','MADRE DE DIOS','MOQUEGUA','PASCO','PIURA','PUNO','SAN MARTÍN','TACNA','TUMBES','UCAYALI']
     datos = [1377,7365,1675,10621,2386,4552,10677,5321,1309,2956,9063,7651,11051,9352,95103,4437,882,1697,1133,13263,4948,3229,2200,1732,3294]
     xx = range(len(datos))
-    ax.bar(xx, datos, width=100, align='center')
+    ax.bar(xx, nombres, width=0.5, align='center')
     ax.set_xticks(xx)
-    ax.set_xticklabels(nombres)
+    ax.set_xticklabels(datos)
     plt.show()
     st.pyplot(plt)
     st.caption("Elaboración propia con datos del Ministerio de salud")
