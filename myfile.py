@@ -73,7 +73,7 @@ if selected == 'Datos':
     
 
     
-if selected == 'INFORMACIÓN ESTADÍSTICA':    
+if selected == 'Información estadística':    
     st.markdown("<h1 style='text-align: center; color: black;'>Ministerio de Salud</h1>", unsafe_allow_html=True)
     text=st
     #---------------------
