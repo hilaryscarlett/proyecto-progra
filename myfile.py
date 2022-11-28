@@ -76,11 +76,11 @@ if selected == 'Datos':
 if selected == 'Información estadística':    
     st.markdown("<h1 style='text-align: center; color: black;'>Ministerio de Salud</h1>", unsafe_allow_html=True)
     
-    st.subheader("<h1 style='text-align: center; color: black; 'PORCENTAJE DE MUERTES POR SEXO")
+    st.subheader("PORCENTAJE DE MUERTES POR SEXO")
     porcentaje = [63.27,36.73]
     sexo = ["Masculino","Femenino"]
     colores = ["#60D394","#FFD97D"]
-    plt.pie(porcentaje, labels=sexo, autopct="%0.1f %%", colors=colores)
+    plt.pie(porcentaje, labels=sexo, autopct="%0.01f %%", colors=colores)
     plt.axis("equal")
     plt.show()
     st.pyplot(plt)
