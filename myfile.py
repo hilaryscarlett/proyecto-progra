@@ -100,7 +100,7 @@ if selected == 'Información estadística':
     xx = range(len(nombres))
     ax.bar(xx, datos, width=1, align='center')
     ax.set_xticks(xx)
-    ax.set_xticklabels(nombres.keys(),rotation="vertical"))
+    ax.set_xticklabels(nombres,rotation="vertical"))
     plt.show()
     st.pyplot(plt)
     
