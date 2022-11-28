@@ -75,16 +75,20 @@ if selected == 'Datos':
     
 if selected == 'Información estadística':    
     st.markdown("<h1 style='text-align: center; color: black;'>Ministerio de Salud</h1>", unsafe_allow_html=True)
-    text=st
-    #---------------------
-    porcentaje = [64,36]
-    sexo = ["M","F"]
+    
+    st.subheader("Porcentaje de muertes por sexo")
+    porcentaje = [63.27,36.73]
+    sexo = ["Masculino","Femenino"]
     colores = ["#60D394","#FFD97D"]
     plt.pie(porcentaje, labels=sexo, autopct="%0.1f %%", colors=colores)
     plt.axis("equal")
     plt.show()
     st.pyplot(plt)
-
+    st.caption("Elaboración propia con datos del Ministerio de salud")
+    
+    
+    
+    text=st
     
 #if selected == 'Reportes':
     #st.markdown("<h1 style='text-align: center; color: black;'>Ministerio de Salud</h1>", unsafe_allow_html=True)
