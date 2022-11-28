@@ -76,7 +76,7 @@ if selected == 'Datos':
 if selected == 'Información estadística':    
     st.markdown("<h1 style='text-align: center; color: black;'>Ministerio de Salud</h1>", unsafe_allow_html=True)
     
-    st.subheader("Porcentaje de muertes por sexo")
+    st.subheader("<h1 style='text-align: center; color: black; 'PORCENTAJE DE MUERTES POR SEXO")
     porcentaje = [63.27,36.73]
     sexo = ["Masculino","Femenino"]
     colores = ["#60D394","#FFD97D"]
