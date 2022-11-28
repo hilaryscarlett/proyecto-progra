@@ -99,8 +99,8 @@ if selected == 'Información estadística':
     #plt.pie(datos, labels=nombres)
     xx = range(len(nombres))
     ax.bar(xx, datos, width=1, align='center')
-    ax.set_xticks(xx,nombre.keys(),rotation="vertical")
-    ax.set_xticklabels(nombres)
+    ax.set_xticks(xx)
+    ax.set_xticklabels(nombres.keys(),rotation="vertical"))
     plt.show()
     st.pyplot(plt)
     
