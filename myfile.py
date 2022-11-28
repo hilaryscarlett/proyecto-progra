@@ -75,7 +75,7 @@ if selected == 'Datos':
     
 if selected == 'INFORMACIÓN ESTADÍSTICA':    
     st.markdown("<h1 style='text-align: center; color: black;'>Ministerio de Salud</h1>", unsafe_allow_html=True)
-    text.st
+    text=st
     #---------------------
     porcentaje = [64,36]
     sexo = ["M","F"]
