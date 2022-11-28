@@ -81,7 +81,7 @@ if selected == 'INFORMACIÓN ESTADÍSTICA':
     plt.pie(porcentaje, labels=sexo, autopct="%0.1f %%", colors=colores)
     plt.axis("equal")
     plt.show()
-    st.pyplot(plt.axis.figure)
+    st.pyplot(plt.axis.fig)
 
     
 #if selected == 'Reportes':
