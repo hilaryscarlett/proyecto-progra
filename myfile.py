@@ -110,13 +110,13 @@ if selected == 'Equipo':
     col1, col2, col3 = st.columns(3)
     
     with col1:
-        st.header("Consuelo Mercedes Gutierrez Lopez")
+        st.caption("Consuelo Mercedes Gutierrez Lopez")
         st.image("consuelo.jpg")
     with col2:
-        st.header("Melanie Nicole Malca Cruzado")
+        st.caption("Melanie Nicole Malca Cruzado")
         st.image("conejo.jpg")
     with col3:
-        st.header("Hilary Scarlett Ramirez Castellares")
+        st.caption("Hilary Scarlett Ramirez Castellares")
         st.image("pingui.jpg")
     
     
