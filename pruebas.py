@@ -26,7 +26,7 @@ st.subheader("")
 
 chart_data = pd.DataFrame(
     np.random.randn(20, 1),
-    columns=['SEXO'])
+    columns=['EDAD_DECLARADA'])
 
 st.line_chart(chart_data)
 import pandas as pd
