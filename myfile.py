@@ -51,7 +51,7 @@ if selected == 'Inicio':
         st.caption("- Congestión nasal")
         st.caption("- Perdida de olfato o gusto")
     with col2:
-        st.image("sintomas.jpg",width=None,use_column_width="always")
+        st.image("sintomas.jpg",width=100,use_column_width="always")
         
     st.subheader("CASOS POSITIVOS DE COVID-19 EN PERÚ")
     st.caption("Número total de muestras: 36 376 044")
