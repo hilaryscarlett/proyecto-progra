@@ -120,6 +120,11 @@ if selected == 'Datos':
     st.subheader("Características del Dataset")
     st.write(c.describe())
     
+    df=pd.read_csv("https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv")
+    st.dataframe(df.style.highlight_max(axis=0))
+    st.table(df)
+    
+    
 
     
 if selected == 'Información estadística':    
@@ -159,9 +164,7 @@ if selected == 'Información estadística':
     option = st.selectbox('ingresar criterio',('SINADEF', 'SEROLOGICO','VIROLOGICO'))
     st.write('Seleccionó:', option)
     
-    
-    
-    
+  
     
     
     
