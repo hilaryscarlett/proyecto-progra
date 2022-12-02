@@ -30,8 +30,6 @@ st.subheader("hola")
 st.subheader("¿QUÉ CRITERIOS SE USARON PARA CONFIRMAR LA MUERTE POR COVID?")
 option = st.selectbox('ingresar criterio',('SINADEF', 'SEROLOGICO','VIROLOGICO'))
 st.write('Seleccionó:', option)
-df.loc[option]
-
 
 
 st.line_chart(c)
