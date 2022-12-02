@@ -33,7 +33,7 @@ st.subheader("")
 
 chart_data = pd.DataFrame(
     np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4]
-    columns=['EDAD_DECLARADA'])
+    columns=['EDAD_DECLARADA','FECHA_FALLECIMIENTO'])
 st.area_chart(chart_data)
 
 import pandas as pd
