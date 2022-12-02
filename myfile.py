@@ -169,13 +169,13 @@ if selected == 'Información estadística':
     #------------------------------
     url='https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv'
     datos=pd.read_csv(url,sep=",")
-    ggplot(data=datos) +
+    ggplot(data=fallecidos_covid) +
     geom_bar(aes(EDAD_DECLARADA,DEPARTAMENTO,group=SEXO,fill=SEXO),
            stat = "identity",
-           subset(datos,dtos$Sexo=="Femenino")) +
+           subset(fallecidos_covid,fallecidos_covid$Sexo=="Femenino")) +
     geom_bar(aes(EDAD DECLARADA,-DEPARTAMENTO,group=SEXO,fill=SEXO),
            stat = "identity",
-           subset(datos,dtos$Sexo=="Masculino")) +
+           subset(fallecidos_covid,fallecidos_covid$Sexo=="Masculino")) +
     scale_y_continuous(breaks=seq(-140000,140000,40000),
                      labels=abs(seq(-140000,140000,40000))) +
     coord_flip()+
