@@ -153,9 +153,11 @@ if selected == 'Información estadística':
     
     url='https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv'
     datos=pd.read_csv(url,sep=",")
-    st.line_chart(data=datos, x="CLASIFICACION_DEF", y="UUID")
+    st.line_chart(data=datos, x="EDAD_DECLARADA", y="UUID")
 
-    
+    st.subheader("¿QUÉ CRITERIOS SE USARON PARA CONFIRMAR LA MUERTE POR COVID?")
+    option = st.selectbox('ingresar criterio',('SINADEF', 'SEROLOGICO','VIROLOGICO'))
+    st.write('Seleccionó:', option)
     
     
     
@@ -207,8 +209,6 @@ if selected == 'Equipo':
 #choice = st.selectbox("Sexo", ["Femenino","Masculino"])
 
 
-#option = st.selectbox('¿Cómo desearía ser contactado/a?',('Email', 'Teléfono','Whatsapp'))
-#st.write('Seleccionó:', option)
 
 #tittle=st.text_input('Ingrese la opción que eligió')
 #st.write("Número de teléfono o email de contecto:", tittle)
