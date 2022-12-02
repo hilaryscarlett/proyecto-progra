@@ -127,11 +127,6 @@ if selected == 'Datos':
     st.subheader("Características del Dataset")
     st.write(c.describe())
     
-    df=pd.read_csv("https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv")
-    st.dataframe(df.style.highlight_max(axis=0))
-    st.write(df)
-    
-    
 
     
 if selected == 'Información estadística':    
