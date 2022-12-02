@@ -56,5 +56,3 @@ df = pd.DataFrame(
     np.random.randn(1000, 2) /[50, 50]+ [-13.15, -74.22] + [-12.03, -77.04],
     columns=['lat', 'lon'])
 st.map(df)
-
-
