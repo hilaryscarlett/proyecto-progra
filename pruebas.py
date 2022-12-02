@@ -9,6 +9,7 @@ from streamlit_option_menu import option_menu
 
 def download_data():
     url='https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv'
+    datos=pd.read_csv(url,sep=",")
     filename="fallecidos_covid"
     urllib.request.urlretrieve(url,filename)
     df=pd.read_csv("fallecidos_covid")
@@ -17,9 +18,17 @@ def download_data():
 st.subheader("Datos generales proporcionados por el Ministerio de Salud sobre el número de fallecidos")
 c=download_data()
 
-chart_data = pd.df(
+chart_data = pd.Dataframe(
     np.random.randn(20, 3),
     columns=['DISTRITO', 'PROVINCIA', 'SEXO'])
+
+
+st.line_chart(data=datos, x='FECHA_FALLECIMIENTO', y='EDAD_DECLARADA')
+
+
+
+
+
 
 st.line_chart(chart_data)
 
