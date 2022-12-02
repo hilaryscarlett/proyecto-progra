@@ -125,7 +125,7 @@ if selected == 'Datos':
     
     url ='https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv'
     datos = pd.read_csv(url, sep=',')
-    st.line_chart(data=datos, x='EDAD_DECLARADA', y='SEXO')
+    st.line_chart(data=datos)
 
     #st.write("dimensiones: "+str(c.shape[0])+"filas"+str(c.shape[1])+"columnas")
     st.dataframe(c)
