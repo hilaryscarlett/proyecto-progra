@@ -29,15 +29,22 @@ st.subheader("hola")
 
 st.subheader("¿QUÉ CRITERIOS SE USARON PARA CONFIRMAR LA MUERTE POR COVID?")
 option = st.selectbox('ingresar criterio',('SINADEF', 'SEROLOGICO','VIROLOGICO'))
+
+
+
+df=pd.DataFrame({
+    c[4]:CLASIFICACION_DEF,
+    })
+
 st.write('Seleccionó:', option)
-df.Loc[option]
+df.[CLAFISICACION_DEF][option]
 
 
 
 
 
 
-st.line_chart(c)
+st.line_chart(df)
 
 
 
