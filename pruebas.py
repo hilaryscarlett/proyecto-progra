@@ -25,7 +25,7 @@ st.line_chart(chart_data)
 st.subheader("")
 
 chart_data = pd.DataFrame(
-    np.random.randn(50, 1),
+    np.random.randn(1, 1),
     columns=['EDAD_DECLARADA'])
 
 st.line_chart(chart_data)
