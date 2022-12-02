@@ -27,6 +27,7 @@ st.sidebar.info("INTEGRANTES: Consuelo, Melanie y Hilary")
 st.sidebar.success('Recopilación de datos sobre la defuncion por Covid-19 del Ministerio de Salud')
 
 
+
 with st.sidebar:
     selected = option_menu(
         menu_title='Menu',
