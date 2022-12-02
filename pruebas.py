@@ -21,21 +21,16 @@ c=download_data()
 chart_data = pd.Dataframe(
     np.random.randn(20, 3),
     columns=['DISTRITO', 'PROVINCIA', 'SEXO'])
+st.line_chart(chart_data)
 
 
 st.line_chart(data=datos, x='FECHA_FALLECIMIENTO', y='EDAD_DECLARADA')
 
 
-
-
-
-
-st.line_chart(chart_data)
-
 st.subheader("")
 
 chart_data = pd.DataFrame(
-    np.random.randn(10, 1),
+    np.random.randn(100, 1),
     columns=['EDAD_DECLARADA'])
 
 st.line_chart(chart_data)
