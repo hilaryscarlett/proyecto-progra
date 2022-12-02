@@ -122,7 +122,7 @@ if selected == 'Datos':
     
     df=pd.read_csv("https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv")
     st.dataframe(df.style.highlight_max(axis=0))
-    st.table(df)
+    st.write(df)
     
     
 
