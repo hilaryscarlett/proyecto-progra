@@ -167,8 +167,7 @@ if selected == 'Información estadística':
   
     
     #------------------------------
-    url='https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv'
-    datos=pd.read_csv(url,sep=",")
+
     ggplot(data=fallecidos_covid) +
     geom_bar(aes(EDAD_DECLARADA,DEPARTAMENTO,group=SEXO,fill=SEXO),
            stat = "identity",
