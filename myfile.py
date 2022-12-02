@@ -57,6 +57,8 @@ if selected == 'Inicio':
         st.image("sintomas.jpg")
         
     st.subheader("CASOS POSITIVOS DE COVID-19 EN PERÚ")
+    st.caption("Número total de muestras: 36 376 044")
+    st.caption("Total de casos confirmados: 4 227 446")
     def download():
         url='https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/casospositivo19.csv'
         filename="casospositivo19"
@@ -80,6 +82,7 @@ if selected == 'Inicio':
     #EN OBSERVACIÓN---------------------------------------
     positividad= [1840931,271943,174542]
     provincias = ["Lima Metropolitana","Arequipa","Piura"]
+    plt.pie(positividad, labels=provincias)
     plt.axis("equal")
     plt.show()
     
