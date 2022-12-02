@@ -42,3 +42,12 @@ chart_data = pd.DataFrame(
     columns=['EDAD_DECLARADA', 'DISTRITO', 'UBIGEO'])
 
 st.area_chart(chart_data)
+
+
+st.header('Ejemplo de mapa')
+df = pd.DataFrame(
+    np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
+    columns=['lat', 'lon'])
+st.map(df)
+
+
