@@ -15,17 +15,12 @@ st.set_page_config(
     page_icon="🔴",
 )
 
-
-
 #---------------------------------------------------------------------------------------
 st.sidebar.image('Logo_Oficial.png')
-st.sidebar.markdown("<h1 style='text-align: center; color: green;'>Programación Avanzada / Proyecto 2022-2</h1>", unsafe_allow_html=True)
-
-
-st.sidebar.info("INTEGRANTES: Consuelo, Melanie y Hilary")
-                
+st.sidebar.markdown("<h1 style='text-align: center; color: green;'>Programación Avanzada / Proyecto 2022-2</h1>", unsafe_allow_html=True)               
 st.sidebar.success('Recopilación de datos sobre la defuncion por Covid-19 del Ministerio de Salud')
 
+#---------------------------------------------------------------------------------------
 with st.sidebar:
     selected = option_menu(
         menu_title='Menu',
@@ -52,6 +47,7 @@ if selected == 'Inicio':
         st.caption("- Dificultad para respirar") 
         st.caption("- Congestión nasal")
         st.caption("- Perdida de olfato o gusto")
+        
     with col2:
         st.image("sintomas.jpg")
         
@@ -60,8 +56,8 @@ if selected == 'Inicio':
     st.caption("Total de casos confirmados: 4 227 446")
     
     url 'https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv'
-    datos = pd.read_csv(url, sep=',')
-    st.line_chart(data=datos)'
+    c = pd.read_csv(url, sep=',')
+    st.bar_chart(c)
     
     
     def download():
@@ -70,8 +66,8 @@ if selected == 'Inicio':
         urllib.request.urlretrieve(url,filename)
         df=pd.read_csv("casospositivo19")
         return df
-    
-    st.dataframe(download())
+    c=download()
+    st.dataframe(c)
     
     
     st.caption("Fuente: Instituto Nacional de Salud y Centro Nacional de Epidemiología, Prevención y Control de Enfermedades - MINSA")
