@@ -26,10 +26,6 @@ url='https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/falle
 datos=pd.read_csv(url,sep=",")
 st.line_chart(data=datos, x='FECHA_FALLECIMIENTO',y="EDAD_DECLARADA")
 
-st.header("intento 1")
-st.area_chart(data=datos,*,x="SEXO",y="EDAD_DECLARADA",height=29,width=193,use_container_width=True)
-
-
 st.subheader("")
 
 chart_data = pd.DataFrame(
@@ -41,7 +37,7 @@ import pandas as pd
 import numpy as np
 
 chart_data = pd.DataFrame(
-    np.random.randn(117, 3),
+    np.random.randn(117, 3/ ),
     columns=['EDAD_DECLARADA', 'DISTRITO', 'UBIGEO'])
 
 st.area_chart(chart_data)
