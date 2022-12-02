@@ -37,8 +37,9 @@ def lectura(a):
     names = ['FECHA_CORTE','FECHA_FALLECIMIENTO','EDAD_DECLARADA','SEXO','CLASFIFICACION_DEF','DEPARTAMENTO','PROVINCIA','DISTRITO','UBIGEO','UUID']
     df.columns = names
     return m
-b=lectura(url)
+b=lectura('https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv')
 st.write(lectura(b))
+
 
 import pandas as pd
 import numpy as np
