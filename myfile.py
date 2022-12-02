@@ -151,6 +151,20 @@ if selected == 'Información estadística':
     
     text=st
     
+    url='https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv'
+    datos=pd.read_csv(url,sep=",")
+    st.line_chart(data=datos, x='UUID',y="CLASIFICACION_DEF")
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 #if selected == 'Reportes':
     #st.markdown("<h1 style='text-align: center; color: black;'>Ministerio de Salud</h1>", unsafe_allow_html=True)
     
