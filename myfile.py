@@ -66,6 +66,15 @@ if selected == 'Inicio':
     
     d=download()
     st.dataframe(d)
+    st.caption("Fuente: Instituto Nacional de Salud y Centro Nacional de Epidemiología, Prevención y Control de Enfermedades - MINSA")
+    
+    Positividad= [1162,1098,922,1457,1310,1270,1258,1146,1108,1203,1342,1477,1118,1226,1767,1387,1419,903,1261,1548,1898,1231,1619,1396,1075,603,1463]
+
+    Provincias = ["Lima Metropolitana","Arequipa","Piura","La Libertad","Callao","Ancash","Junin","Cusco","Lima Region","Lambayeque","Ica","Cajamarca","Puno","San Martin","Loreto","Tacna","Moquegua","Huanuco","Ayacucho","Amazonas","Apurimac","Ucayali","Tumbes","Huancavelica","Pasco","Madre de Dios"]
+    
+    plt.pie(Positividad, labels=Provincias, autopct="%0.1f %%"))
+    plt.axis("equal")
+    plt.show()
     
     st.subheader("FALLECIDOS POR COVID 19")
  
