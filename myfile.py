@@ -58,6 +58,7 @@ if selected == 'Inicio':
     st.subheader("CASOS POSITIVOS DE COVID-19 EN PERÚ")
     st.caption("Número total de muestras: 36 376 044")
     st.caption("Total de casos confirmados: 4 227 446")
+    
     def download():
         url='https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/casospositivo19.csv'
         filename="casospositivo19"
@@ -65,8 +66,7 @@ if selected == 'Inicio':
         df=pd.read_csv("casospositivo19")
         return df
     
-    d=download()
-    st.dataframe(df)
+    st.dataframe(download())
     
     
     st.caption("Fuente: Instituto Nacional de Salud y Centro Nacional de Epidemiología, Prevención y Control de Enfermedades - MINSA")
@@ -121,8 +121,12 @@ if selected == 'Datos':
     
     st.subheader("Datos generales proporcionados por el Ministerio de Salud sobre el número de fallecidos")
     c=download_data()
-    st.area_chart(data=c)
+    st.area_chart(c)
     
+    url ='https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv'
+    datos = pd.read_csv(url, sep=',')
+    st.line_chart(data=datos, x='EDAD_DECLARADA', y='SEXO')
+
     #st.write("dimensiones: "+str(c.shape[0])+"filas"+str(c.shape[1])+"columnas")
     st.dataframe(c)
     # CUADRO DE CARACTERÍSTICAS DEL DATASET
