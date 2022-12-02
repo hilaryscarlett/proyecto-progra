@@ -128,7 +128,7 @@ if selected == 'Datos':
 
     
 if selected == 'Información estadística':    
-    st.markdown("<h1 style='text-align: center; color: black;'>Ministerio de Salud</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; color: black;'>INFORMACIÓN GRÁFICA DE LOS FALLECIDOS POR COIVD-19</h1>", unsafe_allow_html=True)
     
     st.subheader("MUERTES POR SEXO")
     porcentaje = [63.27,36.73]
