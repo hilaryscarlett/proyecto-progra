@@ -6,6 +6,7 @@ import datetime
 import urllib.request
 from PIL import Image
 from streamlit_option_menu import option_menu
+
 def download_data():
     url='https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv'
     filename="fallecidos_covid"
@@ -16,7 +17,7 @@ def download_data():
 st.subheader("Datos generales proporcionados por el Ministerio de Salud sobre el número de fallecidos")
 c=download_data()
 
-chart_data = pd.DataFrame(
+chart_data = pd.df(
     np.random.randn(20, 3),
     columns=['DISTRITO', 'PROVINCIA', 'SEXO'])
 
