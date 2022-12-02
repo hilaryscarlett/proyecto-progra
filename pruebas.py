@@ -40,34 +40,6 @@ def lectura(a):
 b=lectura(url)
 st.write(lectura(b))
 
-
-
-
-
-
-
-
-
-
-
-
-st.write('Seleccionó:', option)
-df.[CLAFISICACION_DEF][option]
-
-
-
-
-
-
-st.line_chart(df)
-
-
-
-
-
-
-
-
 import pandas as pd
 import numpy as np
 
