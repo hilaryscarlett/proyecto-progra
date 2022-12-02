@@ -29,12 +29,27 @@ st.subheader("hola")
 
 st.subheader("¿QUÉ CRITERIOS SE USARON PARA CONFIRMAR LA MUERTE POR COVID?")
 option = st.selectbox('ingresar criterio',('SINADEF', 'SEROLOGICO','VIROLOGICO'))
+st.write()
+
+st.subheader("HOLA")
+def lectura(a):
+    df = pd.read_csv(a)
+    names = ['FECHA_CORTE','FECHA_FALLECIMIENTO','EDAD_DECLARADA','SEXO','CLASFIFICACION_DEF','DEPARTAMENTO','PROVINCIA','DISTRITO','UBIGEO','UUID']
+    df.columns = names
+    return m
+b=lectura(url)
+st.write(lectura(b))
 
 
 
-df=pd.DataFrame({
-    c[4]:CLASIFICACION_DEF,
-    })
+
+
+
+
+
+
+
+
 
 st.write('Seleccionó:', option)
 df.[CLAFISICACION_DEF][option]
