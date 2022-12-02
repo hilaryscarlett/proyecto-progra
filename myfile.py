@@ -57,7 +57,13 @@ if selected == 'Inicio':
         st.image("sintomas.jpg")
         
     st.subheader("CASOS POSITIVOS DE COVID-19")
-    
+    def download_data():
+       
+        filename="Casospositivos"
+        df=pd.read_csv("Casospositivos")
+        return df
+    st.subheader("Datos generales proporcionados por el Ministerio de Salud sobre el número de fallecidos")
+    d=download_data()
  
     
     text=st
