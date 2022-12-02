@@ -121,6 +121,7 @@ if selected == 'Información estadística':
     st.pyplot(plt)
     st.caption("Elaboración propia con datos del Ministerio de salud")
     
+    
     text=st
     
 #if selected == 'Reportes':
