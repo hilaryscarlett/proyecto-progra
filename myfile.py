@@ -49,7 +49,7 @@ if selected == 'Inicio':
         st.caption("- Perdida de olfato o gusto")
         
     with col2:
-        st.image("sintomas.jpg")
+        st.image("sintomas.jpg",width=None, use_column_width="always")
         
     st.subheader("CASOS POSITIVOS DE COVID-19 EN PERÚ")
     st.caption("Número total de muestras: 36 376 044")
