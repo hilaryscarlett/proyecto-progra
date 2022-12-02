@@ -33,6 +33,7 @@ chart_data = pd.DataFrame(
     columns=['EDAD_DECLARADA','FECHA_FALLECIMIENTO'])
 st.area_chart(chart_data)
 
+
 import pandas as pd
 import numpy as np
 
@@ -41,8 +42,3 @@ chart_data = pd.DataFrame(
     columns=['EDAD_DECLARADA', 'DISTRITO', 'UBIGEO'])
 
 st.area_chart(chart_data)
-
-df=pd.read_excel("fallecidos_covid.xlsx")
-st.write(df)
-
-
