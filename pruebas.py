@@ -26,7 +26,7 @@ url='https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/falle
 datos=pd.read_csv(url,sep=",")
 st.line_chart(data=datos, x='FECHA_FALLECIMIENTO',y="EDAD_DECLARADA")
 
-st.subheader("")
+st.subheader("hola")
 
 chart_data = pd.DataFrame(
     np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
