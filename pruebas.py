@@ -42,4 +42,7 @@ chart_data = pd.DataFrame(
 
 st.area_chart(chart_data)
 
+df=pd.read_excel("fallecidos_covid.xlsx")
+st.write(df)
+
 
