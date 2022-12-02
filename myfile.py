@@ -153,7 +153,7 @@ if selected == 'Información estadística':
     
     url='https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv'
     datos=pd.read_csv(url,sep=",")
-    st.line_chart(data=datos, x='UUID',y="CLASIFICACION_DEF")
+    st.line_chart(data=datos, x="CLASIFICACION_DEF", y="UUID")
 
     
     
