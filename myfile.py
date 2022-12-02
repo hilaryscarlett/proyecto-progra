@@ -63,9 +63,11 @@ if selected == 'Inicio':
         urllib.request.urlretrieve(url,filename)
         df=pd.read_csv("casospositivo19")
         return df
-    st.subheader("Datos generales proporcionados por el Ministerio de Salud sobre el número de fallecidos")
+    
     d=download()
     st.dataframe(d)
+    
+    st.subheader("FALLECIDOS POR COVID 19")
  
     
     text=st
