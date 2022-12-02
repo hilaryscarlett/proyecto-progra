@@ -18,7 +18,7 @@ def download_data():
 st.subheader("Datos generales proporcionados por el Ministerio de Salud sobre el número de fallecidos")
 c=download_data()
 
-chart_data = pd.Dataframe(
+chart_data = pd.DataFrame(
     np.random.randn(20, 3),
     columns=['DISTRITO', 'PROVINCIA', 'SEXO'])
 st.line_chart(chart_data)
