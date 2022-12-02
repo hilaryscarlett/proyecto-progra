@@ -28,12 +28,6 @@ st.line_chart(data=datos, x='FECHA_FALLECIMIENTO',y="EDAD_DECLARADA")
 
 st.subheader("hola")
 
-chart_data = pd.DataFrame(
-    np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
-    columns=['EDAD_DECLARADA','FECHA_FALLECIMIENTO'])
-st.area_chart(chart_data)
-
-
 import pandas as pd
 import numpy as np
 
@@ -46,7 +40,8 @@ st.area_chart(chart_data)
 
 st.header('Ejemplo de mapa')
 df = pd.DataFrame(
-    np.random.randn(1000, 2) / [50, 50] + [-10.4, -75.5] + [-13.15,-74.21],
+    np.random.randn(1000, 2) / [50, 50] + [-10.4, -75.5],
+    np.random.randn(1000, 2) / [50, 50] + [-13.15, -74.22],
     columns=['lat', 'lon'])
 st.map(df)
 
