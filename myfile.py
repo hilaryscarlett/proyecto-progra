@@ -52,6 +52,7 @@ if selected == 'Inicio':
         st.caption("- Dolor de garganta")
         st.caption("- Dificultad para respirar") 
         st.caption("- Congestión nasal")
+        st.caption("- Perdida de olfato o gusto")
     with col2:
         st.image("sintomas.jpg")
         
