@@ -105,7 +105,7 @@ if selected == 'Datos':
     st.dataframe(df.style.highlight_max(axis=0))
     st.write(df)
     
-    
+   
 
     
 if selected == 'Información estadística':    
