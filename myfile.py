@@ -121,6 +121,8 @@ if selected == 'Datos':
     
     st.subheader("Datos generales proporcionados por el Ministerio de Salud sobre el número de fallecidos")
     c=download_data()
+    st.are_chart(data=c)
+    
     #st.write("dimensiones: "+str(c.shape[0])+"filas"+str(c.shape[1])+"columnas")
     st.dataframe(c)
     # CUADRO DE CARACTERÍSTICAS DEL DATASET
