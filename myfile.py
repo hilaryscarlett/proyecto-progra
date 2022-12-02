@@ -8,8 +8,6 @@ import urllib.request
 from PIL import Image
 from streamlit_option_menu import option_menu
 import matplotlib.pyplot as plt
-import tidyverse 
-import ggversa
 
 
 st.set_page_config(
@@ -168,21 +166,7 @@ if selected == 'Información estadística':
     
   
     
-    #------------------------------
-    DW=dipodium
-    ggplot(data=fallecidos_covid) +
-    geom_bar(aes(EDAD_DECLARADA,DEPARTAMENTO,group=SEXO,fill=SEXO),
-           stat = "identity",
-           subset(fallecidos_covid,fallecidos_covid$Sexo=="Femenino")) +
-    geom_bar(aes(EDAD DECLARADA,-DEPARTAMENTO,group=SEXO,fill=SEXO),
-           stat = "identity",
-           subset(fallecidos_covid,fallecidos_covid$Sexo=="Masculino")) +
-    scale_y_continuous(breaks=seq(-140000,140000,40000),
-                     labels=abs(seq(-140000,140000,40000))) +
-    coord_flip()+
-    ylab("Tamaño poblacional")+
-    theme(axis.title=element_text(size=10,face="bold"))
-    
+       
     
     
 #if selected == 'Reportes':
