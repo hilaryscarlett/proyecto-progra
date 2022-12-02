@@ -70,6 +70,7 @@ if selected == 'Inicio':
     
     text=st
     
+    
 if selected == 'Datos':
     st.image('ministerio.png')
     st.markdown("<h1 style='text-align: center; color: black;'>Fallecidos por Covid-19</h1>", unsafe_allow_html=True)
