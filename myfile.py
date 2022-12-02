@@ -55,7 +55,7 @@ if selected == 'Inicio':
     with col2:
         st.image("sintomas.jpg")
         
-    st.markdown("<h1 style='text-align: center; color: red;'>Casos positivos de Covid-19</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: left; color: red;'>Casos positivos de Covid-19</h1>", unsafe_allow_html=True)
  
     
     text=st
