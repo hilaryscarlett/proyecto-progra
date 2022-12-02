@@ -69,7 +69,7 @@ if selected == 'Inicio':
     
     d=download()
     st.dataframe(d)
-    
+    st.bart_chart(d)
     
     st.caption("Fuente: Instituto Nacional de Salud y Centro Nacional de Epidemiología, Prevención y Control de Enfermedades - MINSA")
     
