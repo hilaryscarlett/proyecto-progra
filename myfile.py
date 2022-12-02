@@ -58,10 +58,10 @@ if selected == 'Inicio':
         
     st.subheader("CASOS POSITIVOS DE COVID-19")
     def download():
-        url='https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/Casospositivos.csv'
-        filename="Casospositivos"
+        url='https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/casospositivoscovid%20-%20copia.csv'
+        filename="casospositivoscovid%20-%20copia.csv"
         urllib.request.urlretrieve(url,filename)
-        df=pd.read_csv("Casospositivos")
+        df=pd.read_csv("casospositivoscovid%20-%20copia.csv")
         return df
     st.subheader("Datos generales proporcionados por el Ministerio de Salud sobre el número de fallecidos")
     d=download()
