@@ -38,9 +38,7 @@ def lectura(a):
     df.columns = names
     return df
 
-b=lectura('https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv')
-st.write(lectura(b))
-
+st.write(lectura('https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv'))
 
 import pandas as pd
 import numpy as np
