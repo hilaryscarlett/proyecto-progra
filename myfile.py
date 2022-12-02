@@ -19,10 +19,12 @@ st.set_page_config(
 
 #---------------------------------------------------------------------------------------
 st.sidebar.image('Logo_Oficial.png')
-st.sidebar.markdown("<h1 style='text-align: center; color: green;'>Programación Avanzada / Proyecto 2022-2</h1>", unsafe_allow_html=True)            
-st.sidebar.info('Recopilación de datos sobre la defuncion por Covid-19 del Ministerio de Salud')
+st.sidebar.markdown("<h1 style='text-align: center; color: green;'>Programación Avanzada / Proyecto 2022-2</h1>", unsafe_allow_html=True)
 
-#---------------------------------------------------------------------------------------
+
+st.sidebar.info("INTEGRANTES: Consuelo, Melanie y Hilary")
+                
+st.sidebar.success('Recopilación de datos sobre la defuncion por Covid-19 del Ministerio de Salud')
 
 with st.sidebar:
     selected = option_menu(
@@ -51,7 +53,7 @@ if selected == 'Inicio':
         st.caption("- Congestión nasal")
         st.caption("- Perdida de olfato o gusto")
     with col2:
-        st.image("sintomas.jpg",width=200,use_column_width="always")
+        st.image("sintomas.jpg")
         
     st.subheader("CASOS POSITIVOS DE COVID-19 EN PERÚ")
     st.caption("Número total de muestras: 36 376 044")
@@ -64,11 +66,39 @@ if selected == 'Inicio':
         return df
     
     d=download()
-    st.dataframe(d)
-    st.bart_chart(d)
+    st.dataframe(df)
+    
     
     st.caption("Fuente: Instituto Nacional de Salud y Centro Nacional de Epidemiología, Prevención y Control de Enfermedades - MINSA")
     
+    data = ["Lima Metropolitana","Arequipa","Piura","La Libertad","Callao","Ancash","Junin","Cusco","Lima Region","Lambayeque","Ica","Cajamarca","Puno","San Martin","Loreto","Tacna","Moquegua","Huanuco","Ayacucho","Amazonas","Apurimac","Ucayali","Tumbes","Huancavelica","Pasco","Madre de Dios"]
+    plt.bar([1840931,271943,174542,170320,162850,150853,147972,137842,130950,121638,120560,109382,75258,67640,63474,61241,59850,58493,54119,50107,44592,43886,31817,29094,27566,20526], data)
+    plt.show()
+
+
+
+
+    #EN OBSERVACIÓN---------------------------------------
+    positividad= [10.98,9.22,14.57]
+    provincias = ["Lima Metropolitana","Arequipa","Piura"]
+    plt.pie(positividad, labels=provincias)
+    plt.axis("equal")
+    plt.show()
+    
+    st.subheader("GRÁFICA DE CASOS CONFIRMADOS")
+    fig = plt.figure(u'Gráfica de barras') # Figure
+    ax = fig.add_subplot(111) # Axes
+    positividad= [1840931,271943,174542,170320,162850,150853,147972,137842,130950,121638,120560,109382,75258,67640,63474,61241,59850,58493,54119,50107,44592,43886,31817,29094,27566,20526]
+    provincias = ["Lima Metropolitana","Arequipa","Piura","La Libertad","Callao","Ancash","Junin","Cusco","Lima Region","Lambayeque","Ica","Cajamarca","Puno","San Martin","Loreto","Tacna","Moquegua","Huanuco","Ayacucho","Amazonas","Apurimac","Ucayali","Tumbes","Huancavelica","Pasco","Madre de Dios"]
+    xx = range(len(provincias))
+    ax.bar(xx, positividad, width=1, align='center')
+    ax.set_xticks(xx)
+    ax.set_xticklabels(provincias,rotation="vertical")
+    plt.show()
+    st.pyplot(plt)
+    
+    st.caption("Elaboración propia con datos del Ministerio de salud")
+    #_-----------------------------------------------------------
     st.subheader("FALLECIDOS POR COVID 19")
  
     
@@ -101,7 +131,7 @@ if selected == 'Datos':
     st.dataframe(df.style.highlight_max(axis=0))
     st.write(df)
     
-   
+    
 
     
 if selected == 'Información estadística':    
