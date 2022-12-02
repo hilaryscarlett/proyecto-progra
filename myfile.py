@@ -80,7 +80,7 @@ if selected == 'Inicio':
 
 
     #EN OBSERVACIÓN---------------------------------------
-    positividad= [1840931,271943,174542]
+    positividad= [10.98,9.22,14.57]
     provincias = ["Lima Metropolitana","Arequipa","Piura"]
     plt.pie(positividad, labels=provincias)
     plt.axis("equal")
