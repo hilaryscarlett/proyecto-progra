@@ -20,13 +20,28 @@ c=download_data()
 chart_data = pd.DataFrame(
     np.random.randn(20, 3),
     columns=['DISTRITO', 'PROVINCIA', 'SEXO'])
-st.line_chart(chart_data)
 
 url='https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv'
 datos=pd.read_csv(url,sep=",")
 st.line_chart(data=datos, x='FECHA_FALLECIMIENTO',y="EDAD_DECLARADA")
 
 st.subheader("hola")
+
+st.subheader("¿QUÉ CRITERIOS SE USARON PARA CONFIRMAR LA MUERTE POR COVID?")
+option = st.selectbox('ingresar criterio',('SINADEF', 'SEROLOGICO','VIROLOGICO'))
+st.write('Seleccionó:', option)
+df.loc[option]
+
+
+
+st.line_chart(c)
+
+
+
+
+
+
+
 
 import pandas as pd
 import numpy as np
