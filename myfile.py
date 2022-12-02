@@ -30,6 +30,7 @@ with st.sidebar:
         default_index = 0,
     )
     
+   
 if selected == 'Inicio':
     st.markdown("<h1 style='text-align: center; color: red;'>SITUACIÓN ACTUAL COVID-19</h1>", unsafe_allow_html=True)
     st.subheader("¿QUÉ ES LA COVID-19?")
