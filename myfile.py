@@ -59,6 +59,11 @@ if selected == 'Inicio':
     st.caption("Número total de muestras: 36 376 044")
     st.caption("Total de casos confirmados: 4 227 446")
     
+    url 'https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv'
+    datos = pd.read_csv(url, sep=',')
+    st.line_chart(data=datos)'
+    
+    
     def download():
         url='https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/casospositivo19.csv'
         filename="casospositivo19"
