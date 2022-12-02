@@ -54,8 +54,10 @@ if selected == 'Inicio':
         st.caption("- Congestión nasal")
     with col2:
         st.image("sintomas.jpg")
+        
+    st.markdown("<h1 style='text-align: center; color: red;'>Casos positivos de Covid-19</h1>", unsafe_allow_html=True)
  
-    st.subheader("Casos positivos de Covid-19")
+    
     text=st
     
 if selected == 'Datos':
