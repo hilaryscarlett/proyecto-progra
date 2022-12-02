@@ -24,7 +24,7 @@ st.line_chart(chart_data)
 
 url='https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv'
 datos=pd.read_csv(url,sep=",")
-st.line_chart(data=datos, x='PROVINCIA',y="EDAD_DECLARADA")
+st.line_chart(data=datos, x='LIMA',y="EDAD_DECLARADA")
 
 st.header("intento 1")
 st.area_chart(data=datos, x="SEXO",y="EDAD_DECLARADA")
@@ -40,7 +40,7 @@ import pandas as pd
 import numpy as np
 
 chart_data = pd.DataFrame(
-    np.random.randn(100, 3),
+    np.random.randn(117, 3),
     columns=['EDAD_DECLARADA', 'DISTRITO', 'UBIGEO'])
 
 st.area_chart(chart_data)
