@@ -139,6 +139,7 @@ if selected == 'Equipo':
     with col3:
         st.subheader("Hilary Ramirez Castellares")
         st.image("pingui.jpg")
+        
     
     
 
