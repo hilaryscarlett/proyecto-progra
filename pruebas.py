@@ -27,7 +27,8 @@ datos=pd.read_csv(url,sep=",")
 st.line_chart(data=datos, x='FECHA_FALLECIMIENTO',y="EDAD_DECLARADA")
 
 st.header("intento 1")
-st.area_chart(data=datos,*, x="SEXO",y="EDAD_DECLARADA")
+st.area_chart(data=datos,*,x="SEXO",y="EDAD_DECLARADA",height=29,width=193,use_container_width=True)
+
 
 st.subheader("")
 
