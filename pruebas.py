@@ -46,7 +46,7 @@ st.area_chart(chart_data)
 
 st.header('Ejemplo de mapa')
 df = pd.DataFrame(
-    np.random.randn(1000, 2) / [50, 50] + [-10.420887823432702, -75.50769304176643]+[-13.150638253103923, -74.21656352899394],
+    np.random.randn(1000, 2) / [50, 50] + [-10.4, -75.5] + [-13.15,-74.21],
     columns=['lat', 'lon'])
 st.map(df)
 
