@@ -38,9 +38,7 @@ df_prueba = lectura('https://raw.githubusercontent.com/hilaryscarlett/proyecto-p
 
 st.subheader("SELECCIONE DEPARTAMENTO")
 option = st.selectbox('ingresar criterio',('DEPARTAMENTO','UBIGEO')) # este es un string QUE GUARDA MI ELECCION osea algo que va entre comillas
-st.write(option)
-
-st.write(df_prueba.(option))
+st.write(df_prueba.[option]))
 
 st.subheader("PRUEBA AREAS")
 chart_data = df_prueba['SEXO']
