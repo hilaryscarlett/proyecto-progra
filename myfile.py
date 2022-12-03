@@ -47,13 +47,13 @@ if selected == 'Inicio':
     with col1:
         st.subheader("PREVENCIÓN")
         st.caption("**Para prevenir la infección y frenar la transmisión de la COVID-19, haga lo siguiente:**")
-        st.caption("-Vacúnese cuando haya una vacuna disponible para usted.")
-        st.caption("-Manténgase al menos a 1 metro de distancia de los demás, aunque no parezcan estar enfermos.")
-        st.caption("-Utiilice una mascarilla bien ajustada cuando no sea posible el distanciamiento físico o cuando se encuentre en lugares mal ventilados.")
-        st.caption("-Elija los espacios abiertos y bien ventilados en lugar de los cerrados. Abra una ventana si está en el interior.")
-        st.caption("-Lávese las manos regularmente con agua y jabón o límpielas con un desinfectante de manos a base de alcohol.")
-        st.caption("Cúbrase la boca y la nariz al toser o estornudar.")
-        st.caption("Si se siente mal, quédese en casa y aíslese hasta que se recupere.")
+        st.caption("- Vacúnese cuando haya una vacuna disponible para usted.")
+        st.caption("- Manténgase al menos a 1 metro de distancia de los demás, aunque no parezcan estar enfermos.")
+        st.caption("- Utiilice una mascarilla bien ajustada cuando no sea posible el distanciamiento físico o cuando se encuentre en lugares mal ventilados.")
+        st.caption("- Elija los espacios abiertos y bien ventilados en lugar de los cerrados. Abra una ventana si está en el interior.")
+        st.caption("- Lávese las manos regularmente con agua y jabón o límpielas con un desinfectante de manos a base de alcohol.")
+        st.caption("- Cúbrase la boca y la nariz al toser o estornudar.")
+        st.caption("- Si se siente mal, quédese en casa y aíslese hasta que se recupere.")
 
        
     with col2:
