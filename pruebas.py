@@ -41,7 +41,7 @@ df_prueba = lectura('https://raw.githubusercontent.com/hilaryscarlett/proyecto-p
 st.subheader("escoje departamento")
 df_prueba2=lectura('https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/FILTRAJE.csv')
 option = st.selectbox('ingresar criterio',('LIMA','AMAZONAS'))     #STRING QUE GUARDA MI SELECCION ENTRE COMILLAS
-st.write(df.prueba2.loc[option])
+st.write(df_prueba2.loc[option])
 
 
 #st.subheader("SELECCIONE DEPARTAMENTO")
