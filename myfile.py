@@ -18,7 +18,7 @@ st.set_page_config(
 #---------------------------------------------------------------------------------------
 st.sidebar.image('Logo_Oficial.png')
 st.sidebar.markdown("<h1 style='text-align: center; color: green;'>Programación Avanzada / Proyecto 2022-2</h1>", unsafe_allow_html=True)               
-st.sidebar.success('Recopilación de datos sobre la defuncion por Covid-19 del Ministerio de Salud')
+st.sidebar.success('Documentación y recopilación de datos de los registros diarios de muertes por Covid-19 del Ministerio de Salud")
 
 #---------------------------------------------------------------------------------------
 with st.sidebar:
