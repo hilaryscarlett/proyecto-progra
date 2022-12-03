@@ -46,7 +46,7 @@ st.write(df_prueba)
 import pandas as pd
 import numpy as np
 
-chart_data = df_prueba['FECHA_CORTE']
+chart_data = df_prueba['EDAD_DECLARADA']
 
 st.area_chart(chart_data)
 
