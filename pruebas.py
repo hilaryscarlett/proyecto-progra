@@ -17,9 +17,9 @@ def download_data():
 st.subheader("Datos generales proporcionados por el Ministerio de Salud sobre el número de fallecidos")
 c=download_data()
 
-chart_data = pd.DataFrame(
-    np.random.randn(20, 3),
-    columns=['DISTRITO', 'PROVINCIA', 'SEXO'])
+#chart_data = pd.DataFrame(
+ #   np.random.randn(20, 3),
+#    columns=['DISTRITO', 'PROVINCIA', 'SEXO'])
 
 url='https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv'
 datos=pd.read_csv(url,sep=",")
@@ -38,13 +38,17 @@ df_prueba = lectura('https://raw.githubusercontent.com/hilaryscarlett/proyecto-p
 st.write(df_prueba)
 
 st.subheader("¿QUÉ CRITERIOS SE USARON PARA CONFIRMAR LA MUERTE POR COVID?")
-option = st.selectbox('ingresar criterio',('SINADEF', 'SEROLOGICO','VIROLOGICO'))
+option = st.selectbox('ingresar criterio',('SEXO','CLASIFICACION_DEF'))
 st.write(option)
+
+if select==option:
+    st.write(df_prueba[option])
+
 
 import pandas as pd
 import numpy as np
 
-chart_data = df_prueba['EDAD_DECLARADA']
+chart_data = df_prueba['SEXO']
 
 st.area_chart(chart_data)
 
