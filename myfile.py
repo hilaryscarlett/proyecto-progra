@@ -40,7 +40,7 @@ if selected == 'Inicio':
  
         
     with col2:
-        st.image("covid19.jpg")
+        st.image("covid199.jpg")
         
     st.subheader("")
 
