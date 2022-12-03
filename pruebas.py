@@ -37,12 +37,10 @@ def lectura(a):
 df_prueba = lectura('https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv') 
 st.write(df_prueba)
 
-st.subheader("¿QUÉ CRITERIOS SE USARON PARA CONFIRMAR LA MUERTE POR COVID?")
-option = st.selectbox('ingresar criterio',('SEXO','CLASIFICACION_DEF')) # este es un string osea algo que va entre comillas
+st.subheader("SELECCIONE REGION")
+option = st.selectbox('ingresar criterio',('AMAZONAS','ANCASH','LIMA','HUANUCO')) # este es un string QUE GUARDA MI ELECCION osea algo que va entre comillas
 st.write(option)
-
-if option=="SEXO":
-    st.write(df_prueba[option])
+st.write(df_prueba.Loc(option))
 
 
 import pandas as pd
