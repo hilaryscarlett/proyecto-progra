@@ -48,7 +48,7 @@ import numpy as np
 
 chart_data = df_prueba['EDAD_DECLARADA']
 
-st.area_chart(chart_data, x='Edad', y='Número x edad')
+st.area_chart(data = chart_data, x='Edad', y='Numero')
 
 
 #st.header('Ejemplo de mapa')
