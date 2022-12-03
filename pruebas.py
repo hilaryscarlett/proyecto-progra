@@ -34,13 +34,13 @@ def lectura(a):
     return df
 
 df_prueba = lectura('https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv') 
-st.write(df_prueba)
+#st.write(df_prueba)
 
 st.subheader("SELECCIONE DEPARTAMENTO")
 option = st.selectbox('ingresar criterio',('LIMA','AMAZONAS')) # este es un string QUE GUARDA MI ELECCION osea algo que va entre comillas
 st.write(option)
 
-st.write(df_prueba.['DEPARTAMENTO'][option])
+st.write(df_prueba.[option])
 
 st.subheader("PRUEBA AREAS")
 chart_data = df_prueba['SEXO']
