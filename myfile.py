@@ -103,8 +103,9 @@ if selected == 'Datos':
     st.image('ministerio.png')
     st.markdown("<h1 style='text-align: center; color: black;'>Fallecidos por Covid-19</h1>", unsafe_allow_html=True)
     st.subheader("Datos proporcionados por el Ministerio de Salud (MINSA)")
-    st.caption("En esta página web se realizó el registro diario de muertes por Covid-19 y se mostrarán gráficas e imágenes")
-    text=st
+    st.info("Es el registro diario de muertes por Covid-19. Cada registro es igual a una persona, la cual puede caracterizarse por sexo, edad y ubicación geográfica hasta nivel de distrito; además, el 06.mayo.2021 se agregó el código UBIGEO. Desde que se publicó este dataset, cada registro representaba un fallecido confirmado por covid-19, quienes cumplen con criterios clínicos y de laboratorio (prueba molecular, antigénica o pruebas serológicas.")
+
+
     
     def download_data():
         url='https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv'
@@ -113,9 +114,10 @@ if selected == 'Datos':
         df=pd.read_csv("fallecidos_covid")
         return df
     
-    st.subheader("Datos generales proporcionados por el Ministerio de Salud sobre el número de fallecidos")
+    
     c=download_data()
     #st.write("dimensiones: "+str(c.shape[0])+"filas"+str(c.shape[1])+"columnas")
+    st.subheader("Tabla de fallecidos por Covid-19")
     st.dataframe(c)
     # CUADRO DE CARACTERÍSTICAS DEL DATASET
     st.subheader("Características del Dataset")
