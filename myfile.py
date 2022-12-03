@@ -114,11 +114,6 @@ if selected == 'Datos':
     
     st.subheader("Datos generales proporcionados por el Ministerio de Salud sobre el número de fallecidos")
     c=download_data()
-    
-    url ='https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv'
-    datos = pd.read_csv(url, sep=',')
-    st.bar_chart(datos)
-
     #st.write("dimensiones: "+str(c.shape[0])+"filas"+str(c.shape[1])+"columnas")
     st.dataframe(c)
     # CUADRO DE CARACTERÍSTICAS DEL DATASET
