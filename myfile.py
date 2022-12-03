@@ -163,7 +163,7 @@ if selected == 'Equipo':
         st.image("conejo.jpg")
     with col3:
         st.subheader("Hilary Ramirez Castellares")
-        st.image("pingui.jpg")
+        st.image("hilarypreciosisima.jpeg")
         
     
     
