@@ -42,7 +42,7 @@ if selected == 'Inicio':
     with col2:
         st.image("covid19.jpg")
 
-     st.subheader("SÍNTOMAS")
+    st.subheader("SÍNTOMAS")
     col1, col2 = st.columns(2)
     
     with col1:
