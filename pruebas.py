@@ -23,7 +23,7 @@ chart_data = pd.DataFrame(
 
 url='https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv'
 datos=pd.read_csv(url,sep=",")
-#st.line_chart(data=datos, x='FECHA_FALLECIMIENTO',y="EDAD_DECLARADA")
+st.line_chart(data=datos, x='FECHA_FALLECIMIENTO',y="EDAD_DECLARADA")
 
 st.subheader("hola")
 
