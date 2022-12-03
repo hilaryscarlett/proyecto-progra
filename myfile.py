@@ -144,7 +144,7 @@ if selected == 'Información estadística':
     st.subheader("MUERTES POR SEXO")
     porcentaje = [63.27,36.73]
     sexo = ["Masculino","Femenino"]
-    colores = ["#60D394","#FFD97D"]
+    colores = ["#B0CFF8","#FFBACA"]
     plt.pie(porcentaje, labels=sexo, autopct="%0.1f %%", colors=colores)
     plt.axis("equal")
     plt.show()
