@@ -42,7 +42,6 @@ if selected == 'Inicio':
     with col2:
         st.image("covid19.jpg")
 
-    st.subheader("SÍNTOMAS")
     col1, col2 = st.columns(2)
     
     with col1:
@@ -73,10 +72,10 @@ if selected == 'Inicio':
         st.caption("- Dificultad para respirar") 
         st.caption("- Pérdida del habla o la movilidad, o confusión")
         st.caption("- Dolor en el pecho")
-    with col2:
+
         
         
-    
+
     st.subheader("CASOS POSITIVOS DE COVID-19 EN PERÚ")
     st.image("minsa.jpeg")   
     st.caption("Fuente: Ministerio de Salud")
