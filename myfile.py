@@ -193,7 +193,7 @@ if selected == 'Equipo':
         st.image("consuelo.jpg")
     with col2:
         st.subheader("Melanie Malca Cruzado")
-        st.image("conejo.jpg")
+        st.image("Melanie.jpeg")
     with col3:
         st.subheader("Hilary Ramirez Castellares")
         st.image("hilarypreciosisima.jpeg")
