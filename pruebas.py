@@ -39,7 +39,7 @@ st.write(df_prueba)
 
 st.subheader("¿QUÉ CRITERIOS SE USARON PARA CONFIRMAR LA MUERTE POR COVID?")
 option = st.selectbox('ingresar criterio',('SINADEF', 'SEROLOGICO','VIROLOGICO'))
-st.write(df[option])
+st.write(option)
 
 import pandas as pd
 import numpy as np
