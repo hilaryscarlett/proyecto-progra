@@ -38,10 +38,10 @@ df_prueba = lectura('https://raw.githubusercontent.com/hilaryscarlett/proyecto-p
 st.write(df_prueba)
 
 st.subheader("¿QUÉ CRITERIOS SE USARON PARA CONFIRMAR LA MUERTE POR COVID?")
-option = st.selectbox('ingresar criterio',('SEXO','CLASIFICACION_DEF'))
+option = st.selectbox('ingresar criterio',('SEXO','CLASIFICACION_DEF')) # este es un string osea algo que va entre comillas
 st.write(option)
 
-if select==option:
+if option=="SEXO":
     st.write(df_prueba[option])
 
 
