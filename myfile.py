@@ -44,6 +44,7 @@ if selected == 'Inicio':
 
     col1, col2 = st.columns(2)
     
+    st.subheader("")
     with col1:
         st.subheader("PREVENCIÓN")
         st.caption("**Para prevenir la infección y frenar la transmisión de la COVID-19, haga lo siguiente:**")
@@ -83,6 +84,7 @@ if selected == 'Inicio':
         st.caption("- Porcentaje de Letalidad: 5.14%")
         st.caption(" La disponibilidad de camas UCI con ventiladores en zona COVID-19")
         st.caption(" durante el estado de emergencia sanitaria es de 518 hasta el día 27/11/22.")
+        st.caption("")
         st.caption(" En la imagen se muestra la situación de la #COVID19 en Perú hasta las 22:00")
         st.caption("horas del 1 de diciembre por el Ministerio de Salud")
     with col2:
