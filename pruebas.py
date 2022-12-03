@@ -21,6 +21,7 @@ c=download_data()
  #   np.random.randn(20, 3),
 #    columns=['DISTRITO', 'PROVINCIA', 'SEXO'])
 
+
 url='https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv'
 datos=pd.read_csv(url,sep=",")
 #st.line_chart(data=datos, x='FECHA_FALLECIMIENTO',y="EDAD_DECLARADA")
@@ -33,15 +34,25 @@ def lectura(a):
     #df.columns = names
     return df
 
+
 df_prueba = lectura('https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv') 
 #st.write(df_prueba)
 
-st.subheader("SELECCIONE DEPARTAMENTO")
+st.subehader("escoje departamento")
+df_prueba2=lectura('https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/FILTRAJE.csv')
 option = st.selectbox('ingresar criterio',('LIMA','AMAZONAS'))     #STRING QUE GUARDA MI SELECCION ENTRE COMILLAS
-st.write(df_prueba.loc[option])
+st.write(df.prueba2.loc[option])
+
+
+#st.subheader("SELECCIONE DEPARTAMENTO")
+#option = st.selectbox('ingresar criterio',('LIMA','AMAZONAS'))     #STRING QUE GUARDA MI SELECCION ENTRE COMILLAS
+#st.write(df_prueba.loc[option])
+
+
+
 
 st.subheader("PRUEBA AREAS")
-chart_data = df_prueba['SEXO']
+chart_data = df_prueba['DISTRITO']
 
 st.area_chart(chart_data)
 
