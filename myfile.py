@@ -34,7 +34,7 @@ if selected == 'Inicio':
     st.markdown("<h1 style='text-align: center; color: red;'>SITUACIÓN ACTUAL COVID-19</h1>", unsafe_allow_html=True)
     st.subheader("¿QUÉ ES LA COVID-19?")
     st.caption("Una enfermedad infecciosa causada por el coronavirus SARS-CoV-2, que se propaga de persona a persona a través de gotitas, partículas acuosas o aerosoles expulsados por individuos infectados al momento de hablar, toser, estornudar, o incluso respirar. El virus puede ser inhalado por las personas que están cerca al enfermo y también puede contaminar cualquier tipo de superficie (pasamanos, mesas, lapiceros, entre otros), e ingresar al organismo cuando nos tocamos los ojos, nariz o boca con las manos sin lavar luego de haber tocado esas superficies contaminadas. Las personas mayores y las que sufren enfermedades respiratorias, diabetes o cardiopatías podrían desarrollar el virus en un nivel grave, si llegaran a contraerlo.")
-    st.image('covid19.jpg')
+    st.image('covid11.png')
     st.subheader("SÍNTOMAS:")
     
     col1, col2 = st.columns(2)
@@ -51,47 +51,15 @@ if selected == 'Inicio':
     with col2:
         st.image("sintomas.jpg",width=None, use_column_width="always")
         
-    st.subheader("CASOS POSITIVOS DE COVID-19 EN PERÚ")
-    st.caption("Número total de muestras: 36 376 044")
-    st.caption("Total de casos confirmados: 4 227 446")
+    
     
     #url 'https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv'
     #c = pd.read_csv(url, sep=',')
     #st.bar_chart(c)
     
     
-    def download():
-        url='https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/casospositivo19.csv'
-        filename="casospositivo19"
-        urllib.request.urlretrieve(url,filename)
-        df=pd.read_csv("casospositivo19")
-        return df
-    d=download()
-    st.dataframe(d)
-    st.caption("Fuente: Instituto Nacional de Salud y Centro Nacional de Epidemiología, Prevención y Control de Enfermedades - MINSA")
-
-
-    #EN OBSERVACIÓN---------------------------------------
-    positividad= [10.98,9.22,14.57]
-    provincias = ["Lima Metropolitana","Arequipa","Piura"]
-    plt.pie(positividad, labels=provincias)
-    plt.axis("equal")
-    plt.show()
+  
     
-    st.subheader("GRÁFICA DE CASOS CONFIRMADOS")
-    fig = plt.figure(u'Gráfica de barras') # Figure
-    ax = fig.add_subplot(111) # Axes
-    positividad= [1840931,271943,174542,170320,162850,150853,147972,137842,130950,121638,120560,109382,75258,67640,63474,61241,59850,58493,54119,50107,44592,43886,31817,29094,27566,20526]
-    provincias = ["Lima Metropolitana","Arequipa","Piura","La Libertad","Callao","Ancash","Junin","Cusco","Lima Region","Lambayeque","Ica","Cajamarca","Puno","San Martin","Loreto","Tacna","Moquegua","Huanuco","Ayacucho","Amazonas","Apurimac","Ucayali","Tumbes","Huancavelica","Pasco","Madre de Dios"]
-    xx = range(len(provincias))
-    ax.bar(xx, positividad, width=1, align='center')
-    ax.set_xticks(xx)
-    ax.set_xticklabels(provincias,rotation="vertical")
-    plt.show()
-    st.pyplot(plt)
-    
-    st.caption("Elaboración propia con datos del Ministerio de salud")
-    #_-----------------------------------------------------------
     st.subheader("FALLECIDOS POR COVID 19")
  
     
@@ -120,6 +88,21 @@ if selected == 'Datos':
     st.subheader("Características del Dataset")
     st.write(c.describe())
     
+   
+    st.subheader("CASOS POSITIVOS DE COVID-19 EN PERÚ")
+    st.caption("Número total de muestras: 36 376 044")
+    st.caption("Total de casos confirmados: 4 227 446")
+    
+    def download():
+        url='https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/casospositivo19.csv'
+        filename="casospositivo19"
+        urllib.request.urlretrieve(url,filename)
+        df=pd.read_csv("casospositivo19")
+        return df
+    d=download()
+    st.dataframe(d)
+    st.caption("Fuente: Instituto Nacional de Salud y Centro Nacional de Epidemiología, Prevención y Control de Enfermedades - MINSA")
+       
 
     
 if selected == 'Información estadística':    
@@ -159,9 +142,9 @@ if selected == 'Información estadística':
     option = st.selectbox('ingresar criterio',('SINADEF', 'SEROLOGICO','VIROLOGICO'))
     st.write('Seleccionó:', option)
     
-  
     
-       
+    
+
     
     
 #if selected == 'Reportes':
