@@ -51,7 +51,9 @@ if selected == 'Inicio':
     with col2:
         st.image("sintomas.jpg",width=None, use_column_width="always")
         
-    
+    st.subheader("CASOS POSITIVOS DE COVID-19 EN PERÚ")
+    st.caption("Número total de muestras: 36 376 044")
+    st.caption("Total de casos confirmados: 4 227 446")
     
     #url 'https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv'
     #c = pd.read_csv(url, sep=',')
@@ -90,8 +92,6 @@ if selected == 'Datos':
     
    
     st.subheader("CASOS POSITIVOS DE COVID-19 EN PERÚ")
-    st.caption("Número total de muestras: 36 376 044")
-    st.caption("Total de casos confirmados: 4 227 446")
     
     def download():
         url='https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/casospositivo19.csv'
