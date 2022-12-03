@@ -48,15 +48,19 @@ if selected == 'Inicio':
     with col1:
         st.subheader("SÍNTOMAS")
         st.caption("Según la OMS, La COVID-19 afecta a diferentes personas de forma distinta. La mayoría de las personas infectadas desarrollarán una enfermedad de leve a moderada y se recuperarán sin necesidad de hospitalización.") 
-        st.caption("_Síntomas más comunes:_")
+        st.caption("**Síntomas más comunes:**")
         st.caption("**- Fiebre**") 
-        st.caption("- Tos seca")
+        st.caption("*- Tos seca*")
         st.caption("- Cansansio") 
-        st.caption("- Dolor de garganta")
-        st.caption("- Dificultad para respirar") 
-        st.caption("- Congestión nasal")
         st.caption("- Perdida de olfato o gusto")
-        
+        st.caption("**Síntomas menos comunes**")
+        st.caption("- Dolor de garganta")
+        st.caption("- Dolor de cabeza")
+        st.caption("- Ojos rojos o irritados")
+        st.caption("**Síntomas graves**")
+        st.caption("- Dificultad para respirar") 
+        st.caption("- Pérdida del habla o la movilidad, o confusión")
+        st.caption("- Dolor en el pecho")
     with col2:
         st.image("sintomas.jpg",width=None, use_column_width="always")
         
