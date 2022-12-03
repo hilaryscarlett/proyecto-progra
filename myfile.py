@@ -77,8 +77,8 @@ if selected == 'Inicio':
     
     with col1:
         st.subheader("SALA SITUACIONAL COVID-19")
-        st.markdown("**- Número total de muestras:** 36 376 044")
-        st.markdown("**- Total de casos confirmados:** 4 227 446")
+        st.markdown("**- Número total de personas muestreadas:** 36 561 147")
+        st.markdown("**- Total de casos confirmados:** 4 278 977")
         st.markdown("**- Número de pruebas PCR(+):** 1 288 448")
         st.markdown("**- Número de pruebas rápidas(+):** 955 880")
         st.markdown("**- Número de pruebas Antigena:** 1 983 118")
