@@ -33,21 +33,20 @@ st.write()
 
 st.subheader("HOLA")
 def lectura(a):
-    df = pd.read_csv(a, encoding = 'latin1')
+    df = pd.read_csv(a)
     names = ['FECHA_CORTE','FECHA_FALLECIMIENTO','EDAD_DECLARADA','SEXO','CLASFIFICACION_DEF','DEPARTAMENTO','PROVINCIA','DISTRITO','UBIGEO','UUID']
     df.columns = names
     return df
 
-st.write(lectura('https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv'))
+df_prueba = lectura('https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv') 
+st.write(df_prueba)
 
 
 
 import pandas as pd
 import numpy as np
 
-chart_data = pd.DataFrame(
-    np.random.randn(117,3),
-    columns=['EDAD_DECLARADA', 'DISTRITO', 'UBIGEO'])
+chart_data = df_prueba['FECHA_CORTE']
 
 st.area_chart(chart_data)
 
