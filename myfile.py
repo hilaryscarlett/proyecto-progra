@@ -73,10 +73,15 @@ if selected == 'Inicio':
     col1, col2 = st.columns(2)
     
     with col1:
-        st.subheader("CASOS POSITIVOS DE COVID-19 EN PERÚ")
-        st.caption("Número total de muestras: 36 376 044")
-        st.caption("Total de casos confirmados: 4 227 446")
-        
+        st.subheader("SALA SITUACIONAL COVID-19")
+        st.caption("- Número total de muestras: 36 376 044")
+        st.caption("- Total de casos confirmados: 4 227 446")
+        st.caption("- Número de pruebas PCR(+): 1 288 448")
+        st.caption("- Número de pruebas rápidas(+): 955 880")
+        st.caption("- Número de pruebas Antigena: 1 983 118")
+        st.caption("- Fallecidos: 217 428")
+        st.caption("- Porcentaje de Letalidad: 5.14%")
+        st.caption("- Número de pruebas PCR(+): 1 288 448")
         
     with col2:
         st.subheader("CASOS POSITIVOS DE COVID-19 EN PERÚ")
