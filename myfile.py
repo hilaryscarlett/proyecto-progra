@@ -50,7 +50,7 @@ if selected == 'Inicio':
         
     with col2:
         st.image("sintomas.jpg",width=None, use_column_width="always")
-        
+    st.image("minsa.jpeg")   
     st.subheader("CASOS POSITIVOS DE COVID-19 EN PERÚ")
     st.caption("Número total de muestras: 36 376 044")
     st.caption("Total de casos confirmados: 4 227 446")
