@@ -117,7 +117,7 @@ if selected == 'Datos':
     
     c=download_data()
     #st.write("dimensiones: "+str(c.shape[0])+"filas"+str(c.shape[1])+"columnas")
-    st.subheader("Tabla de fallecidos por Covid-19")
+    st.subheader("Tabla de datos de fallecidos por Covid-19")
     st.dataframe(c)
     # CUADRO DE CARACTERÍSTICAS DEL DATASET
     st.subheader("Características del Dataset")
