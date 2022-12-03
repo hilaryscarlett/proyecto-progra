@@ -68,16 +68,21 @@ if selected == 'Inicio':
         st.caption("- Dificultad para respirar") 
         st.caption("- Pérdida del habla o la movilidad, o confusión")
         st.caption("- Dolor en el pecho")
+       
 
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        st.subheader("CASOS POSITIVOS DE COVID-19 EN PERÚ")
+        st.caption("Número total de muestras: 36 376 044")
+        st.caption("Total de casos confirmados: 4 227 446")
         
         
-
-    st.subheader("CASOS POSITIVOS DE COVID-19 EN PERÚ")
-    st.image("minsa.jpeg")   
-    st.caption("Fuente: Ministerio de Salud")
-    st.subheader("CASOS POSITIVOS DE COVID-19 EN PERÚ")
-    st.caption("Número total de muestras: 36 376 044")
-    st.caption("Total de casos confirmados: 4 227 446")
+    with col2:
+        st.subheader("CASOS POSITIVOS DE COVID-19 EN PERÚ")
+        st.image("minsa.jpeg")   
+        st.caption("Fuente: Ministerio de Salud")
+    
     
     #url 'https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv'
     #c = pd.read_csv(url, sep=',')
