@@ -42,14 +42,14 @@ if selected == 'Inicio':
     with col2:
         st.image("covid19.jpg")
 
-    
+     st.subheader("SÍNTOMAS")
     col1, col2 = st.columns(2)
     
-    st.subheader("SÍNTOMAS")
     with col1:
+        st.subheader("SÍNTOMAS")
         st.caption("Según la OMS, La COVID-19 afecta a diferentes personas de forma distinta. La mayoría de las personas infectadas desarrollarán una enfermedad de leve a moderada y se recuperarán sin necesidad de hospitalización.") 
-        st.caption("*Síntomas más comunes:*")
-        st.caption("- Fiebre") 
+        st.caption("_Síntomas más comunes:_")
+        st.caption("**- Fiebre**") 
         st.caption("- Tos seca")
         st.caption("- Cansansio") 
         st.caption("- Dolor de garganta")
