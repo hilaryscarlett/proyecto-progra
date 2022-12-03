@@ -81,10 +81,9 @@ if selected == 'Inicio':
         st.caption("- Número de pruebas Antigena: 1 983 118")
         st.caption("- Fallecidos: 217 428")
         st.caption("- Porcentaje de Letalidad: 5.14%")
-        st.caption("- Número de pruebas PCR(+): 1 288 448")
+        st.caption(" La disponibilidad de camas UCI con ventiladores en zona COVID-19 durante el estado de emergencia sanitaria es de 518 hasta el día 27/11/22.")
         
     with col2:
-        st.subheader("CASOS POSITIVOS DE COVID-19 EN PERÚ")
         st.image("minsa.jpeg")   
         st.caption("Fuente: Ministerio de Salud")
     
