@@ -41,6 +41,8 @@ if selected == 'Inicio':
         
     with col2:
         st.image("covid19.jpg")
+        
+    st.subheader("")
 
     col1, col2 = st.columns(2)
     
