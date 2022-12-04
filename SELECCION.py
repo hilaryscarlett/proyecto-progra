@@ -10,7 +10,7 @@ option = st.selectbox('mayor - menor - igual para ver fechas',('=','<','>'))    
 number = st.number_input('Insertar numero')
 
 if option == '=':
-    st.write(dfprueba.loc[dfprueba['EDAD_DECLARADA'] = number])
+    st.write(dfprueba.loc[dfprueba['EDAD_DECLARADA'] == number])
 if option == '<':
     st.write(dfprueba.loc[dfprueba['EDAD_DECLARADA'] < number])
 if option == '>':
