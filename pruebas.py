@@ -5,19 +5,6 @@ from datetime import time
 import datetime
 import urllib.request
 
-def download_data():
-    url='https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv'
-    filename="fallecidos_covid"
-    urllib.request.urlretrieve(url,filename)
-    df=pd.read_csv("fallecidos_covid")
-    return df
-
-st.subheader("Datos generales proporcionados por el Ministerio de Salud sobre el número de fallecidos")
-c=download_data()
-
-#chart_data = pd.DataFrame(
- #   np.random.randn(20, 3),
-#    columns=['DISTRITO', 'PROVINCIA', 'SEXO'])
 
 
 #url='https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv'
@@ -25,10 +12,10 @@ c=download_data()
 #st.line_chart(data=datos, x='FECHA_FALLECIMIENTO',y="EDAD_DECLARADA")
 
 
-st.subheader("HOLA")
-def lectura(a):
-    df = pd.read_csv(a, parse_dates = ['FECHA_CORTE', 'FECHA_FALLECIMIENTO'])
-    return df
+#st.subheader("HOLA")
+#def lectura(a):
+    #df = pd.read_csv(a, parse_dates = ['FECHA_CORTE', 'FECHA_FALLECIMIENTO'])
+    #return df
 
 #df_prueba = lectura('https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv') 
 #st.write(df_prueba)
@@ -41,10 +28,7 @@ option = st.selectbox('ingresar criterio',('UBIGEO','UUID'))     #STRING QUE GUA
 st.write(dfprueba[option])
 
 number = st.number_input('Insertar numero')
-a=int(input("ingresar numero en la fila index"))
-st.write(dfprueba.iloc[a])
-
-#st.write(dfprueba.loc[dfprueba['EDAD_DECLARADA'] == number])
+st.write(dfprueba.loc[dfprueba['EDAD_DECLARADA'] > number])
 
 
 #st.subheader("PRUEBA AREAS")
