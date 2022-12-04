@@ -179,7 +179,8 @@ if selected == 'Información estadística':
 
     
     st.subheader("MUERTES EN EL DEPARTAMENTO:")
-    departamento = st.text_input('Ingrese el departamento:')
+    #departamento = st.text_input('Ingrese el departamento:')
+    departamento = st.selectbox('Ingrese el departamento',('AMAZONAS','ÁNCASH','APURÍMAC','AREQUIPA','AYACUCHO','CAJAMARCA','CALLAO','CUSCO','HUANCAVELICA','HUÁNUCO','ICA','JUNIN','LA LIBERTAD','LAMBAYEQUE','LIMA','LORETO','MADRE DE DIOS','MOQUEGUA','PASCO','PIURA','PUNO','SAN MARTÍN','TACNA','TUMBES','UCAYALI'))
     st.write("Se mostrará una tabla con los datos en el departamento de:",departamento)
     st.write(datos.loc[datos['DEPARTAMENTO'] == departamento])
 
