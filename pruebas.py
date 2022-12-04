@@ -20,13 +20,10 @@ option = st.selectbox('ingresar mayor, menor o igual para ver fechas',('=','<','
 number = st.number_input('Insertar numero')
 
 if option == "=":
-    number = st.number_input('Insertar numero')
     st.write(dfprueba.loc[dfprueba['EDAD_DECLARADA'] == number])
 if option == "<":
-    number = st.number_input('Insertar numero')
     st.write(dfprueba.loc[dfprueba['EDAD_DECLARADA'] < number])
 if option ==">":
-    number = st.number_input('Insertar numero')
     st.write(dfprueba.loc[dfprueba['EDAD_DECLARADA'] > number])
 
 #st.subheader("PRUEBA AREAS")
