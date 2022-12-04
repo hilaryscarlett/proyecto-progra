@@ -55,7 +55,7 @@ st.write(dfprueba[option])
 
 
 
-#st.subheader("PRUEBA AREAS")
-#chart_data = df_prueba['DISTRITO']
+st.subheader("PRUEBA AREAS")
+chart_data = df_prueba['DISTRITO']
 
 st.area_chart(chart_data)
