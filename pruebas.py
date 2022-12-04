@@ -37,12 +37,12 @@ def lectura(a):
 dfprueba=lectura('https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid%20(6).csv')
 st.write(dfprueba.reset_index())
 
-#option = st.selectbox('ingresar criterio',('UBIGEO','UUID'))     #STRING QUE GUARDA MI SELECCION ENTRE COMILLAS
-#st.write(dfprueba[option])
+option = st.selectbox('ingresar criterio',('UBIGEO','UUID'))     #STRING QUE GUARDA MI SELECCION ENTRE COMILLAS
+st.write(dfprueba[option])
 
-#number = st.number_input('Insertar numero')
-#st.write('The current number is ', number)
-#st.write(dfprueba.iloc[number])
+number = st.number_input('Insertar numero')
+st.write('The current number is ', number)
+st.write(dfprueba.iloc[number])
 
 #st.write(dfprueba.loc[dfprueba['EDAD_DECLARADA'] == number])
 
