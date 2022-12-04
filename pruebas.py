@@ -20,8 +20,8 @@ c=download_data()
 #    columns=['DISTRITO', 'PROVINCIA', 'SEXO'])
 
 
-url='https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv'
-datos=pd.read_csv(url,sep=",")
+#url='https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv'
+#datos=pd.read_csv(url,sep=",")
 #st.line_chart(data=datos, x='FECHA_FALLECIMIENTO',y="EDAD_DECLARADA")
 
 
@@ -35,13 +35,16 @@ def lectura(a):
 
 
 
-df_prueba = lectura('https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv') 
+#df_prueba = lectura('https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv') 
 #st.write(df_prueba)
 
+
+dfprueba=lectura('https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid%20(6).csv')
 st.subheader("escoje departamento")
-df_prueba2=lectura('https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid_2.csv')
+
 option = st.selectbox('ingresar criterio',('LIMA','AMAZONAS'))     #STRING QUE GUARDA MI SELECCION ENTRE COMILLAS
 st.write(df_prueba2['EDAD_DECLARADA']['UBIGEO'][option])
+
 
 
 
@@ -52,13 +55,7 @@ st.write(df_prueba2['EDAD_DECLARADA']['UBIGEO'][option])
 
 
 
-st.subheader("PRUEBA AREAS")
-chart_data = df_prueba['DISTRITO']
+#st.subheader("PRUEBA AREAS")
+#chart_data = df_prueba['DISTRITO']
 
 st.area_chart(chart_data)
-
-#st.header('Ejemplo de mapa')
-#df = pd.DataFrame(
-#    np.random.randn(1000, 2) /[50, 50]+ [-13.15, -74.22] + [-12.03, -77.04],
-#    columns=['lat', 'lon'])
-# st.map(df)
