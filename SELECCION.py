@@ -10,3 +10,4 @@ df_prueba2=pd.read_csv('https://raw.githubusercontent.com/hilaryscarlett/proyect
 
 option = st.selectbox('ingresar criterio',('LIMA','AMAZONAS')) 
 st.write(df_prueba2['EDAD_DECLARADA']['UBIGEO'][option])
+
