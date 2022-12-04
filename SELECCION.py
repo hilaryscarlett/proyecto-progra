@@ -8,6 +8,6 @@ import pandas as pd
 
 df_prueba=pd.read_csv('https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid_2.csv')
 
-option = st.selectbox('ingresar criterio',('LIMA','AMAZONAS')) 
+option = st.selectbox('INGRESAR CRITERIO',('LIMA','AMAZONAS')) 
 st.write(df_prueba2['EDAD_DECLARADA']['UBIGEO'][option])
 
