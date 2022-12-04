@@ -14,7 +14,7 @@ filtro= st.selectbox('ingresar mayor, menor o igual para ver fechas',('=','<','>
 num = st.number_input('Insertar numero')
 
 if filtro == "=":
-    st.write(df_prueba.loc[df_prueba['EDAD_DECLARADA'] == numb])
+    st.write(df_prueba.loc[df_prueba['EDAD_DECLARADA'] == num])
 if filtro == "<":
     st.write(df_prueba.loc[df_prueba['EDAD_DECLARADA'] < num])
 if filtro ==">":
