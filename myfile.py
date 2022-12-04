@@ -168,7 +168,7 @@ if selected == 'Información estadística':
     url='https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv'
     datos=pd.read_csv(url,sep=",")
      
-    st.subheader("DETALLE DE MUERTES EN EL DEPARTAMENTO:")
+    st.subheader("DETALLE DE MUERTES POR DEPARTAMENTO:")
     #departamento = st.text_input('Ingrese el departamento:')
     departamento = st.selectbox('Seleccione el departamento',('AMAZONAS','ANCASH','APURIMAC','AREQUIPA','AYACUCHO','CAJAMARCA','CALLAO','CUSCO','HUANCAVELICA','HUANUCO','ICA','JUNIN','LA LIBERTAD','LAMBAYEQUE','LIMA','LORETO','MADRE DE DIOS','MOQUEGUA','PASCO','PIURA','PUNO','SAN MARTIN','TACNA','TUMBES','UCAYALI'))
     st.write("Se mostrará una tabla con los datos en el departamento de:",departamento)
