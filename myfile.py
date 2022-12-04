@@ -190,8 +190,14 @@ if selected == 'Información estadística':
 if selected == 'Equipo':
     st.markdown("<h1 style='text-align: center; color: black;'>Integrantes del Grupo</h1>", unsafe_allow_html=True)
     
+     col1, col2 = st.columns(2)
+    with col1:
+        st.info("Somos estudiantes de 5to ciclo de la carrera Ingeniería Ambiental de la Universidad Peruana Cayetano Heredia")
+    with col2:
+        st.image("ingamb.png")
+        
+        
     col1, col2, col3 = st.columns(3)
-    
     with col1:
         st.subheader("Consuelo Gutierrez Lopez")
         st.image("consuelo.jpg")
