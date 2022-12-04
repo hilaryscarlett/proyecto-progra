@@ -181,7 +181,7 @@ if selected == 'Información estadística':
     st.subheader("MUERTES EN EL DEPARTAMENTO:")
     departamento = st.text_input('Ingrese el departamento')
     st.caption("Se mostrará una tabla con los datos en el departamento de",departamento)
-    st.write(datos.loc[datos['DEPARTAMENTO'] == number])
+    st.write(datos.loc[datos['DEPARTAMENTO'] == departamento])
 
     
 #if selected == 'Reportes':
