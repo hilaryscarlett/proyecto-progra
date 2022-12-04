@@ -40,23 +40,16 @@ def lectura(a):
 
 
 dfprueba=lectura('https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid%20(6).csv')
+option = st.selectbox('ingresar criterio',('UBIGEO','UUID'))     #STRING QUE GUARDA MI SELECCION ENTRE COMILLAS
+st.write(df_prueba[option])
 
-st.write(dfprueba["UBIGEO","UUID"])
+number = st.number_input('Insertar numero')
+st.write('The current number is ', number)
 
-
-option = st.selectbox('ingresar criterio',('0','1','2','3','4','5'))     #STRING QUE GUARDA MI SELECCION ENTRE COMILLAS
-st.write(dfprueba.loc[option])
-
-
-
-#st.subheader("SELECCIONE DEPARTAMENTO")
-#option = st.selectbox('ingresar criterio',('LIMA','AMAZONAS'))     #STRING QUE GUARDA MI SELECCION ENTRE COMILLAS
-#st.write(df_prueba.loc[option])
+st.write(prueba.loc[prueba['EDAD_DECLARADA'] > number])
 
 
+#st.subheader("PRUEBA AREAS")
+#chart_data = df_prueba['DISTRITO']
 
-
-st.subheader("PRUEBA AREAS")
-chart_data = df_prueba['DISTRITO']
-
-st.area_chart(chart_data)
+#st.area_chart(chart_data)
