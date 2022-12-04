@@ -37,8 +37,7 @@ if selected == 'Inicio':
     
     with col1:
         st.info("Una enfermedad infecciosa causada por el coronavirus SARS-CoV-2, que se propaga de persona a persona a través de gotitas, partículas acuosas o aerosoles expulsados por individuos infectados al momento de hablar, toser, estornudar, o incluso respirar. El virus puede ser inhalado por las personas que están cerca al enfermo y también puede contaminar cualquier tipo de superficie (pasamanos, mesas, lapiceros, entre otros), e ingresar al organismo cuando nos tocamos los ojos, nariz o boca con las manos sin lavar luego de haber tocado esas superficies contaminadas. Las personas mayores y las que sufren enfermedades respiratorias, diabetes o cardiopatías podrían desarrollar el virus en un nivel grave, si llegaran a contraerlo.")
- 
-        
+    
     with col2:
         st.image("covid199.jpg")
         
@@ -193,7 +192,7 @@ if selected == 'Equipo':
     col1, col2 = st.columns(2)
     with col1:
         st.subheader("¿Quiénes somos?")
-        st.warning("Somos estudiantes de 5to ciclo de la carrera Ingeniería Ambiental de la Universidad Peruana Cayetano Heredia. Realizamos este proyecto con el entusiasmo de qué otras personas puedan estar informadas sobre la situación actual del Covid-19 en el Perú; asimismo comunicar el impacto por el número de perdidas humanas por esta enfermedad"))
+        st.warning("Somos estudiantes de 5to ciclo de la carrera Ingeniería Ambiental de la Universidad Peruana Cayetano Heredia. Realizamos este proyecto con el entusiasmo de qué otras personas puedan estar informadas sobre la situación actual del Covid-19 en el Perú; asimismo comunicar el impacto por el número de perdidas humanas por esta enfermedad")
     with col2:
         st.image("ingamb.png")
         
