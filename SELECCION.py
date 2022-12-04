@@ -10,4 +10,3 @@ df_prueba=pd.read_csv('https://raw.githubusercontent.com/hilaryscarlett/proyecto
 
 option = st.selectbox('INGRESAR CRITERIO',('SEXO','EDAD_DECLARADA')) 
 st.write(df_prueba2[option])
-
