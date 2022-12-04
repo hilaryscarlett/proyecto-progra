@@ -173,9 +173,9 @@ if selected == 'Información estadística':
  
     
     st.subheader("MUERTES MAYORES A:")
-    number = st.number_input('insertar numero')
-    st.write('usted escogio observar muertes de edad mayor a:', number)
-    st.write(datos.loc[datos['EDAD_DECLARADA'] > number])
+    number = st.number_input('Escriba la edad:')
+    #st.write('usted escogio observar muertes de edad mayor a:', number)
+    st.write(datos.loc[datos['EDAD_DECLARADA'] == number])
 
     
     st.subheader("MUERTES EN EL DEPARTAMENTO:")
