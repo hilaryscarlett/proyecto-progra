@@ -40,11 +40,12 @@ def lectura(a):
 
 
 dfprueba=lectura('https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid%20(6).csv')
-st.subheader("escoje departamento")
 
-option = st.selectbox('ingresar criterio',('SEXO','EDAD_DECLARADA'))     #STRING QUE GUARDA MI SELECCION ENTRE COMILLAS
-st.write(dfprueba[option])
+st.write(dfprueba["UBIGEO","UUID"])
 
+
+option = st.selectbox('ingresar criterio',('0','1','2','3','4','5'))     #STRING QUE GUARDA MI SELECCION ENTRE COMILLAS
+st.write(dfprueba.loc[option])
 
 
 
