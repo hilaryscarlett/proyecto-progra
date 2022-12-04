@@ -9,12 +9,31 @@ st.write(df_prueba)
 
 number=st.number_input('insertar numero que sale al lado de su ubigeo')
 
+filtro= st.selectbox('ingresar mayor, menor o igual para ver fechas',('=','<','>'))     #STRING QUE GUARDA MI SELECCION ENTRE COMILLAS
 
-st.write(st.table(df_prueba.iloc[0:10]))
+num = st.number_input('Insertar numero')
+
+if filtro == "=":
+    st.write(dfprueba.loc[dfprueba['EDAD_DECLARADA'] == numb])
+if filtro == "<":
+    st.write(dfprueba.loc[dfprueba['EDAD_DECLARADA'] < num])
+if filtro ==">":
+    st.write(dfprueba.loc[dfprueba['EDAD_DECLARADA'] > num])
+
+
+
+st.subheader("PRUEBA AREAS")
+chart_data = df_prueba['EDAD_DECLARADA']
+
+st.area_chart(chart_data)
+
+
+
+
+
+#st.write(st.table(df_prueba.iloc[0:10]))
 
 #st.write(df_prueba.iloc[1000])
-
-
 
 
 
