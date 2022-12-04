@@ -180,7 +180,7 @@ if selected == 'Información estadística':
     
     st.subheader("MUERTES EN EL DEPARTAMENTO:")
     number = st.text_input('Ingrese el departamento')
-    #st.write('usted escogio observar muertes de edad mayor a:', number)
+    st.write('usted escogio observar muertes de edad mayor a:', number)
     st.write(datos.loc[datos['DEPARTAMENTO'] = number])
 
     
