@@ -43,7 +43,7 @@ dfprueba=lectura('https://raw.githubusercontent.com/hilaryscarlett/proyecto-prog
 st.subheader("escoje departamento")
 
 option = st.selectbox('ingresar criterio',('LIMA','AMAZONAS'))     #STRING QUE GUARDA MI SELECCION ENTRE COMILLAS
-st.write(df_prueba2['EDAD_DECLARADA']['UBIGEO'][option])
+st.write(dfprueba['EDAD_DECLARADA']['UBIGEO'][option])
 
 
 
