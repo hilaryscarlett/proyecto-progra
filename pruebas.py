@@ -21,7 +21,7 @@ import urllib.request
 #st.write(df_prueba)
 
 
-dfprueba=lectura('https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid%20(6).csv')
+dfprueba=pd.read_csv('https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid%20(6).csv')
 st.write(dfprueba.reset_index())
 
 option = st.selectbox('ingresar criterio',('UBIGEO','UUID'))     #STRING QUE GUARDA MI SELECCION ENTRE COMILLAS
