@@ -4,7 +4,7 @@ import pandas as pd
 
 dfprueba=pd.read_csv('https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv')
 
-title = st.text_input('igual', 'mayor','menor')
+title = st.text_input('insertar = < >')
 
 st.write('usted escogio', title)
 
