@@ -176,7 +176,11 @@ if selected == 'Información estadística':
     st.write('Seleccionó:', option)
     
     
-    
+    st.subheader("MUERTES MAYORES A:")
+    prueba=pd.read_csv('https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/casospositivo19.csv')
+    number = st.number_input('insertar numero')
+    st.write('usted escogio observar muertes de edad mayor a:', number)
+    st.write(prueba.loc[prueba['EDAD_DECLARADA'] > number])
 
     
     
