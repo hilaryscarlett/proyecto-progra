@@ -23,7 +23,7 @@ if filtro ==">":
 
 
 st.subheader("PRUEBA AREAS")
-chart_data = df_prueba['CLASIFICACIÒN_DEF']
+chart_data = df_prueba['CLASIFICACION_DEF']
 st.area_chart(chart_data)
 
 
