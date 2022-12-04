@@ -40,7 +40,8 @@ st.write(dfprueba[option])
 
 number = st.number_input('Insertar numero')
 st.write('The current number is ', number)
-st.write(dfprueba.iloc[number])
+
+st.write(dfprueba.iloc[0])
 
 #st.write(dfprueba.loc[dfprueba['EDAD_DECLARADA'] == number])
 
