@@ -23,7 +23,7 @@ if filtro ==">":
 
 
 st.subheader("PRUEBA AREAS")
-chart_data = df_prueba['SEXO','UUID']
+chart_data = df_prueba['SEXO']
 chart_data2=df_prueba['UUID']
 st.area_chart(chart_data,chart_data2)
 
