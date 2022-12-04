@@ -1,3 +1,7 @@
+import numpy as np
+import pandas as pd
+
+
 def lectura(a):
     df = pd.read_csv(a, parse_dates = ['FECHA_CORTE', 'FECHA_FALLECIMIENTO'])
     return df
