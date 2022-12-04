@@ -39,10 +39,8 @@ option = st.selectbox('ingresar criterio',('UBIGEO','UUID'))     #STRING QUE GUA
 st.write(dfprueba[option])
 
 number = st.number_input('Insertar numero')
-a=number
 st.write('The current number is ', number)
-
-st.write(dfprueba.iloc[a])
+st.write(dfprueba.iloc[number])
 
 #st.write(dfprueba.loc[dfprueba['EDAD_DECLARADA'] == number])
 
