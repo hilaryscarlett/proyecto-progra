@@ -178,6 +178,11 @@ if selected == 'Información estadística':
     st.write(datos.loc[datos['EDAD_DECLARADA'] > number])
 
     
+    st.subheader("MUERTES EN EL DEPARTAMENTO:")
+    number = st.text_input('Ingrese el departamento')
+    #st.write('usted escogio observar muertes de edad mayor a:', number)
+    st.write(datos.loc[datos['DEPARTAMENTO'] = number])
+
     
 #if selected == 'Reportes':
     #st.markdown("<h1 style='text-align: center; color: black;'>Ministerio de Salud</h1>", unsafe_allow_html=True)
