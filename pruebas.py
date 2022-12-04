@@ -41,7 +41,7 @@ st.write(dfprueba[option])
 number = st.number_input('Insertar numero')
 st.write('The current number is ', number)
 
-st.write(dfprueba.loc[dfprueba['EDAD_DECLARADA'] > number])
+st.write(dfprueba.loc[dfprueba['EDAD_DECLARADA'] == number])
 
 
 #st.subheader("PRUEBA AREAS")
