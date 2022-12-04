@@ -23,8 +23,7 @@ if filtro ==">":
 
 
 st.subheader("PRUEBA AREAS")
-chart_data = df_prueba['EDAD_DECLARADA']
-
+chart_data = df_prueba['SEXO','UUID']
 st.area_chart(chart_data)
 
 
