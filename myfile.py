@@ -170,16 +170,12 @@ if selected == 'Información estadística':
     datos=pd.read_csv(url,sep=",")
     st.line_chart(data=datos, x="EDAD_DECLARADA", y="UUID")
 
-    st.subheader("¿QUÉ CRITERIOS SE USARON PARA CONFIRMAR LA MUERTE POR COVID?")
-    option = st.selectbox('ingresar criterio',('SINADEF', 'SEROLOGICO','VIROLOGICO'))
-    st.write('Seleccionó:', option)
-    
+ 
     
     st.subheader("MUERTES MAYORES A:")
-    prueba=pd.read_csv('https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/casospositivo19.csv')
     number = st.number_input('insertar numero')
     st.write('usted escogio observar muertes de edad mayor a:', number)
-    st.write(prueba.loc[prueba['EDAD_DECLARADA'] > number])
+    st.write(datos.loc[datos['EDAD_DECLARADA'] > number])
 
     
     
