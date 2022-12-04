@@ -33,13 +33,16 @@ def lectura(a):
     return df
 
 
+
+
 df_prueba = lectura('https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv') 
 #st.write(df_prueba)
 
 st.subheader("escoje departamento")
-df_prueba2=lectura('https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/FILTRAJE.csv')
+df_prueba2=lectura('https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid_2.csv')
 option = st.selectbox('ingresar criterio',('LIMA','AMAZONAS'))     #STRING QUE GUARDA MI SELECCION ENTRE COMILLAS
-st.write(df_prueba2.loc[option])
+st.write(df_prueba2['EDAD_DECLARADA']['UBIGEO'][option])
+
 
 
 #st.subheader("SELECCIONE DEPARTAMENTO")
