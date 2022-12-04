@@ -23,9 +23,9 @@ if filtro ==">":
 
 
 st.subheader("PRUEBA AREAS")
-chart_data = df_prueba['SEXO']
-chart_data2=df_prueba['UUID']
-st.area_chart(chart_data,chart_data2)
+chart_data = df_prueba['CLASIFICACIÒN_DEF']
+st.area_chart(chart_data)
+
 
 
     #number = st.number_input('Escriba la edad:')
