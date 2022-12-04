@@ -193,7 +193,7 @@ if selected == 'Equipo':
     col1, col2 = st.columns(2)
     with col1:
         st.subheader("¿Quiénes somos?")
-        st.warning("Somos estudiantes de 5to ciclo de la carrera Ingeniería Ambiental de la Universidad Peruana Cayetano Heredia")
+        st.warning("Somos estudiantes de 5to ciclo de la carrera Ingeniería Ambiental de la Universidad Peruana Cayetano Heredia. Realizamos este proyecto con el entusiasmo de qué otras personas puedan estar informadas sobre la situación actual del Covid-19 en el Perú; asimismo comunicar el impacto por el número de perdidas humanas por esta enfermedad"))
     with col2:
         st.image("ingamb.png")
         
