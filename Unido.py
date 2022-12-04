@@ -24,8 +24,14 @@ if filtro ==">":
 
 st.subheader("PRUEBA AREAS")
 chart_data = df_prueba['SEXO','UUID']
-st.area_chart(chart_data)
+chart_data2=df_prueba['UUID']
+st.area_chart(chart_data,chart_data2)
 
+
+    #number = st.number_input('Escriba la edad:')
+    #st.write('usted escogio observar muertes de edad mayor a:', number)
+    #st.write(datos.loc[datos['EDAD_DECLARADA'] == number])
+    
 
 
 
