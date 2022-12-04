@@ -9,7 +9,10 @@ st.write(df_prueba)
 
 number=st.number_input('insertar numero que sale al lado de su ubigeo')
 
-st.write(df_prueba.iloc[1000])
+
+st.write(st.table(df_prueba.iloc[0:10]))
+
+#st.write(df_prueba.iloc[1000])
 
 
 
