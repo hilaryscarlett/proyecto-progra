@@ -165,25 +165,30 @@ if selected == 'Información estadística':
     
     
     text=st
-    
     url='https://raw.githubusercontent.com/hilaryscarlett/proyecto-progra/main/fallecidos_covid.csv'
     datos=pd.read_csv(url,sep=",")
-    st.line_chart(data=datos, x="EDAD_DECLARADA", y="UUID")
-
- 
-    
-    st.subheader("MUERTES MAYORES A:")
-    number = st.number_input('Escriba la edad:')
-    #st.write('usted escogio observar muertes de edad mayor a:', number)
-    st.write(datos.loc[datos['EDAD_DECLARADA'] == number])
-
-    
-    st.subheader("MUERTES EN EL DEPARTAMENTO:")
+     
+    st.subheader("DETALLE DE MUERTES EN EL DEPARTAMENTO:")
     #departamento = st.text_input('Ingrese el departamento:')
     departamento = st.selectbox('Seleccione el departamento',('AMAZONAS','ANCASH','APURIMAC','AREQUIPA','AYACUCHO','CAJAMARCA','CALLAO','CUSCO','HUANCAVELICA','HUANUCO','ICA','JUNIN','LA LIBERTAD','LAMBAYEQUE','LIMA','LORETO','MADRE DE DIOS','MOQUEGUA','PASCO','PIURA','PUNO','SAN MARTIN','TACNA','TUMBES','UCAYALI'))
     st.write("Se mostrará una tabla con los datos en el departamento de:",departamento)
     st.write(datos.loc[datos['DEPARTAMENTO'] == departamento])
 
+   
+    st.line_chart(data=datos, x="EDAD_DECLARADA", y="UUID")
+
+ 
+    st.subheader("FALLECIDOS SEGUN EDAD:")
+    st.caption("Este modulo es para observar fallecidos de diferentes edades mayores, menores o iguales a un numero")
+    filtro= st.selectbox('Seleccionar',('=','<','>'))     #STRING QUE GUARDA MI SELECCION ENTRE COMILLAS
+    num = st.number_input('Insertar numero')
+    
+    if filtro == "=":
+        st.write(datos.loc[datos['EDAD_DECLARADA'] == num])
+    if filtro == "<":
+        st.write(datos.loc[datos['EDAD_DECLARADA'] < num])
+    if filtro ==">":
+        st.write(datos.loc[datos['EDAD_DECLARADA'] > num])
     
 #if selected == 'Reportes':
     #st.markdown("<h1 style='text-align: center; color: black;'>Ministerio de Salud</h1>", unsafe_allow_html=True)
