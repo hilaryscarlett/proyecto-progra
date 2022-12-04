@@ -175,7 +175,7 @@ if selected == 'Información estadística':
     st.write(datos.loc[datos['DEPARTAMENTO'] == departamento])
 
    
-    st.line_chart(data=datos, x="EDAD_DECLARADA", y="UUID")
+    st.line_chart(data=datos, x="CLASIFICACION_DEF", y="UBIGEO")
 
  
     st.subheader("FALLECIDOS SEGUN EDAD:")
