@@ -190,8 +190,6 @@ if selected == 'Información estadística':
     if filtro ==">":
         st.write(datos.loc[datos['EDAD_DECLARADA'] > num])
     
-#if selected == 'Reportes':
-    #st.markdown("<h1 style='text-align: center; color: black;'>Ministerio de Salud</h1>", unsafe_allow_html=True)
     
 if selected == 'Equipo':
     st.markdown("<h1 style='text-align: center; color: black;'>Integrantes del Grupo</h1>", unsafe_allow_html=True)
