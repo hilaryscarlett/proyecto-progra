@@ -213,6 +213,7 @@ if selected == 'Equipo':
         st.subheader("Hilary Ramirez Castellares")
         st.image("hilarypreciosisima.jpeg")
         
+        
     
     
 
