@@ -207,15 +207,15 @@ if selected == 'Equipo':
     with col1:
         st.subheader("Consuelo Gutierrez Lopez")
         st.image("consuelo.jpg")
-        st.caption("<h1 style='text-align: center; color: black;'>consuelo.gutierrez@upch.pe</h1>", unsafe_allow_html=True)
+        st.caption("consuelo.gutierrez@upch.pe")
     with col2:
         st.subheader("Melanie Malca Cruzado")
         st.image("melanie.jpg")
-        st.caption("<h1 style='text-align: center; color: black;'>melanie.malca@upch.pe</h1>", unsafe_allow_html=True)
+        st.caption("melanie.malca@upch.pe")
     with col3:
         st.subheader("Hilary Ramirez Castellares")
         st.image("hilaryguapisima.jpg")
-        st.caption("<h1 style='text-align: center; color: black;'>hilary.ramirez@upch.pe</h1>", unsafe_allow_html=True)
+        st.caption("hilary.ramirez@upch.pe")
         
         
     
