@@ -207,41 +207,20 @@ if selected == 'Equipo':
     with col1:
         st.subheader("Consuelo Gutierrez Lopez")
         st.image("consuelo.jpg")
+        st.markdown("<h1 style='text-align: center; color: black;'>consuelo.gutierrez@upch.pe</h1>", unsafe_allow_html=True)
     with col2:
         st.subheader("Melanie Malca Cruzado")
         st.image("melanie.jpg")
+        st.markdown("<h1 style='text-align: center; color: black;'>melanie.malca@upch.pe</h1>", unsafe_allow_html=True)
     with col3:
         st.subheader("Hilary Ramirez Castellares")
         st.image("hilaryguapisima.jpg")
+        st.markdown("<h1 style='text-align: center; color: black;'>hilary.ramirez@upch.pe</h1>", unsafe_allow_html=True)
         
         
     
     
 
-#--------------------------------------------------------------------------------------------
-
-
-#chart_data = pd.DataFrame(
-    #np.random.randn(20, 1),
-    #columns=["a"])
-
-#st.bar_chart(chart_data)
-
-
-
-
-#tittle=st.text_input('Nombre y Apellidos:')
-#st.write(tittle)
-
-#d= st.date_input("Fecha de fallecimiento",datetime.date(2019, 7, 6))
-#st.write("ingresar fecha de fallecimiento:", d)
-
-#choice = st.selectbox("Sexo", ["Femenino","Masculino"])
-
-
-
-#tittle=st.text_input('Ingrese la opción que eligió')
-#st.write("Número de teléfono o email de contecto:", tittle)
 
 
 
